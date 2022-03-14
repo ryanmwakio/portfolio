@@ -12,9 +12,402 @@
   src: url("./assets/fonts/Library\ 3\ am\ soft.otf");
 }
 
+* {
+  box-sizing: border-box;
+  transition: all 0.3s;
+  padding: 0;
+  margin: 0;
+}
+
 html,
 body {
-  @apply bg-primarycharcoalblack;
+  @apply bg-white;
   font-size: 16px;
   font-family: adineue;
+}
+
+.container {
+  @apply max-w-screen-2xl;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.line-vertical-left {
+  @apply bg-primarygrey;
+  position: absolute;
+  left: 25%;
+  width: 1px;
+  height: 100%;
+  z-index: 4;
+}
+
+.line-vertical-right {
+  @apply bg-primarygrey;
+  position: absolute;
+  right: 25%;
+  width: 1px;
+  height: 100%;
+  z-index: 4;
+}
+
+.node-bottom-left {
+  @apply bg-white;
+  position: absolute;
+  left: 24.8%;
+  width: 5px;
+  height: 4%;
+  bottom: 10%;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+.node-top-right {
+  @apply bg-white;
+  position: absolute;
+  right: 24.8%;
+  width: 5px;
+  height: 4%;
+  top: 10%;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+.phone {
+  box-shadow: -3px 3px 10px rgba(0, 0, 0, 1);
+  border-radius: 25px;
+}
+
+.phone-outer-frame {
+  height: 440px;
+  width: 220px;
+  border: 1px solid rgb(31, 31, 31);
+  border-radius: 25px;
+
+  position: relative;
+  background: rgb(39, 39, 39);
+  background: linear-gradient(
+    to bottom right,
+    rgb(39, 39, 39),
+    rgb(26, 25, 25)
+  );
+}
+
+.phone-left-btn-1 {
+  width: 3px;
+  height: 20px;
+  background: rgb(39, 39, 39);
+  position: absolute;
+  left: -3px;
+  top: 14%;
+  border-radius: 30%;
+}
+.phone-left-btn-2 {
+  width: 3px;
+  height: 26px;
+  background: rgb(39, 39, 39);
+  position: absolute;
+  left: -3px;
+  top: 24%;
+  border-radius: 30%;
+}
+.phone-left-btn-3 {
+  width: 3px;
+  height: 26px;
+  background: rgb(39, 39, 39);
+  position: absolute;
+  left: -3px;
+  top: 32%;
+  border-radius: 30%;
+}
+.phone-right-btn-1 {
+  @apply bg-primarypurple;
+  width: 3px;
+  height: 28px;
+  /* background: rgb(224, 178, 25); */
+  position: absolute;
+  right: -3px;
+  top: 23%;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.9);
+  border-radius: 30%;
+}
+
+.phone-inner-frame {
+  height: 420px;
+  width: 200px;
+  border: 1px solid rgb(31, 31, 31);
+  border-radius: 15px;
+  margin-left: 9px;
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+  background: rgb(46, 45, 45);
+}
+
+.phone-status-bar {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  border-bottom: 1px solid rgb(31, 31, 31);
+  background: rgb(46, 45, 45);
+}
+
+.phone-camera {
+  position: absolute;
+  left: 25%;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  top: 45%;
+  background: rgb(70, 69, 69);
+}
+
+.phone-speaker {
+  position: absolute;
+  width: 35%;
+  height: 3px;
+  border-radius: 100px;
+  background: rgb(70, 69, 69);
+  top: 55%;
+  left: 35%;
+}
+
+.phone-info {
+  width: 10%;
+  height: 13px;
+  border: 1px solid transparent;
+  position: absolute;
+  left: 4%;
+  top: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgb(70, 69, 69);
+}
+
+.phone-battery {
+  width: 20%;
+  height: 13px;
+  border: 1px solid transparent;
+  position: absolute;
+  left: 77%;
+  top: 35%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.phone-percentage {
+  font-size: 0.6rem;
+  margin-right: 2px;
+  color: rgb(70, 69, 69);
+}
+
+.phone-bar {
+  width: 200px;
+  height: 60%;
+  background: rgb(70, 69, 69);
+}
+
+.phone-mini-bar {
+  width: 39px;
+  height: 25%;
+  background: rgb(70, 69, 69);
+}
+
+.phone-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: rgb(48, 48, 48);
+}
+
+.phone-content > img {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .phone {
+    box-shadow: -3px 3px 10px rgba(0, 0, 0, 1);
+    border-radius: 25px;
+  }
+
+  .phone-outer-frame {
+    height: 300px;
+    width: 150px;
+    border: 1px solid rgb(31, 31, 31);
+    border-radius: 25px;
+
+    position: relative;
+    background: rgb(39, 39, 39);
+    background: linear-gradient(
+      to bottom right,
+      rgb(39, 39, 39),
+      rgb(26, 25, 25)
+    );
+  }
+
+  .phone-left-btn-1 {
+    width: 3px;
+    height: 20px;
+    background: rgb(39, 39, 39);
+    position: absolute;
+    left: -3px;
+    top: 14%;
+    border-radius: 30%;
+  }
+  .phone-left-btn-2 {
+    width: 3px;
+    height: 26px;
+    background: rgb(39, 39, 39);
+    position: absolute;
+    left: -3px;
+    top: 24%;
+    border-radius: 30%;
+  }
+  .phone-left-btn-3 {
+    width: 3px;
+    height: 26px;
+    background: rgb(39, 39, 39);
+    position: absolute;
+    left: -3px;
+    top: 32%;
+    border-radius: 30%;
+  }
+  .phone-right-btn-1 {
+    @apply bg-primarypurple;
+    width: 3px;
+    height: 28px;
+    /* background: rgb(224, 178, 25); */
+    position: absolute;
+    right: -3px;
+    top: 23%;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.9);
+    border-radius: 30%;
+  }
+
+  .phone-inner-frame {
+    height: 280px;
+    width: 140px;
+    border: 1px solid rgb(31, 31, 31);
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    background: rgb(46, 45, 45);
+  }
+
+  .phone-status-bar {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid rgb(31, 31, 31);
+    background: rgb(46, 45, 45);
+  }
+
+  .phone-camera {
+    position: absolute;
+    left: 25%;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    top: 45%;
+    background: rgb(70, 69, 69);
+  }
+
+  .phone-speaker {
+    position: absolute;
+    width: 35%;
+    height: 3px;
+    border-radius: 100px;
+    background: rgb(70, 69, 69);
+    top: 55%;
+    left: 35%;
+  }
+
+  .phone-info {
+    width: 10%;
+    height: 13px;
+    border: 1px solid transparent;
+    position: absolute;
+    left: 4%;
+    top: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .phone-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgb(70, 69, 69);
+  }
+
+  .phone-battery {
+    width: 20%;
+    height: 13px;
+    border: 1px solid transparent;
+    position: absolute;
+    left: 77%;
+    top: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .phone-percentage {
+    font-size: 0.6rem;
+    margin-right: 2px;
+    color: rgb(70, 69, 69);
+  }
+
+  .phone-bar {
+    width: 200px;
+    height: 60%;
+    background: rgb(70, 69, 69);
+  }
+
+  .phone-mini-bar {
+    width: 39px;
+    height: 25%;
+    background: rgb(70, 69, 69);
+  }
+
+  .phone-content {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgb(48, 48, 48);
+  }
+
+  .phone-content > img {
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes slide-in {
+  from {
+    top: 0;
+    left: 0;
+  }
+  to {
+    bottom: 0;
+    right: 0;
+  }
 }

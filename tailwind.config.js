@@ -3,12 +3,6 @@ const colors = require("tailwindcss/colors");
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    screens: {
-      sm: "480px",
-      md: "768px",
-      lg: "976px",
-      xl: "1440px",
-    },
     colors: {
       transparent: "transparent",
       black: colors.black,
@@ -29,9 +23,6 @@ module.exports = {
       primarycharcoalblack: "#232427",
       primaryblack: "#1B1C20",
       primarygrey: "#79797A",
-    },
-    fontFamily: {
-      sans: ["Graphik", "sans-serif"],
     },
     extend: {},
   },
