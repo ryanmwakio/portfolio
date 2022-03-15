@@ -53,17 +53,23 @@
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
+  box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .form-group button:hover,
 .form-group button:active {
-  box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: -5px 3px 8px rgba(0, 0, 0, 0.6);
 }
 
 .form-group label {
   @apply text-white;
   font-size: 0.8rem;
   display: block;
+}
+
+.my-email {
+  @apply text-white;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 640px) {

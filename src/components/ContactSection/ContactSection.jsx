@@ -1,13 +1,21 @@
 import React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import "./ContactSection.css";
 
 function ContactSection() {
+  const notify = () =>
+    toast("Sorry the functionality has not yet been wired by Ryan, chillax", {
+      position: "top-center",
+      autoClose: 3000,
+    });
+
   let handleSubmit = (e) => {
     e.preventDefault();
-    alert("hello");
   };
   return (
     <>
+      <ToastContainer />
       <div className="contact-section">
         <div className="line-vertical-right"></div>
         {/* <div className="line-vertical-left"></div> */}
@@ -27,9 +35,12 @@ function ContactSection() {
                 <textarea name="" id="message"></textarea>
               </div>
               <div className="form-group">
-                <button type="submit">send message</button>
+                <button type="submit" onClick={notify}>
+                  send message
+                </button>
               </div>
             </form>
+            <p className="my-email">ryanmwakio6@gmail.com</p>
           </div>
         </div>
       </div>
