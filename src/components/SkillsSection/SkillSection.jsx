@@ -44,6 +44,7 @@ function SkillSection() {
               design
             </h1>
           </div>
+
           <div
             className={`skill-item ${active2 ? "skill-item-active" : ""}`}
             onMouseEnter={handleActive2}
@@ -67,6 +68,7 @@ function SkillSection() {
               develop
             </h1>
           </div>
+          
           <div
             className={`skill-item ${active3 ? "skill-item-active" : ""}`}
             onMouseEnter={handleActive3}
