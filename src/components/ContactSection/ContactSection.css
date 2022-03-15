@@ -1,0 +1,73 @@
+.contact-section {
+  @apply bg-primarycharcoalblack overflow-hidden;
+  width: 100%;
+  position: relative;
+}
+
+.form-section {
+  @apply bg-primaryblack;
+  margin: 0px auto 6rem auto;
+  width: 55%;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-form {
+  width: 100%;
+}
+
+.form-group {
+  @apply my-3;
+  width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+  @apply border-b  border-primarygrey text-primarygrey p-5;
+  width: 100%;
+  background: none;
+  resize: none;
+  font-size: 0.8rem;
+  border-bottom: 1px dashed #79797a8f;
+}
+
+.form-group input:active,
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group textarea:active {
+  background: none;
+  outline: none;
+}
+
+.form-group button {
+  @apply text-white;
+  width: 100%;
+  background: linear-gradient(to right, #e30057, #8826d1);
+  padding: 10px 0px;
+  font-size: 0.8rem;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+
+.form-group button:hover,
+.form-group button:active {
+  box-shadow: -3px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.form-group label {
+  @apply text-white;
+  font-size: 0.8rem;
+  display: block;
+}
+
+@media (max-width: 640px) {
+  .form-section {
+    width: 95%;
+  }
+}
