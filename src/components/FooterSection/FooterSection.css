@@ -1,0 +1,22 @@
+.footer-section {
+  @apply bg-primaryblack py-24 px-12 md:px-24;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-logo {
+  @apply text-white;
+  font-weight: 900;
+  font-size: 2.5rem;
+  font-family: library3am;
+}
+
+.footer-info {
+  @apply text-white;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 640px) {
+}

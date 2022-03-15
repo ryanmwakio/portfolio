@@ -2,6 +2,10 @@ import React from "react";
 import "./ContactSection.css";
 
 function ContactSection() {
+  let handleSubmit = (e) => {
+    e.preventDefault();
+    alert("hello");
+  };
   return (
     <>
       <div className="contact-section">
@@ -9,7 +13,7 @@ function ContactSection() {
         {/* <div className="line-vertical-left"></div> */}
         <div className="form-section  my-10 py-10 px-16 md:px-28">
           <div className="my-form">
-            <form action="" method="post">
+            <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="name">Name</label>
                 <input type="text" />
