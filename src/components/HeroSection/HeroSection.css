@@ -39,6 +39,14 @@
 
 .nav-links a {
   @apply cursor-pointer;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.nav-links a:hover,.nav-links a:active,.nav-links a:focus {
+  @apply text-primarypink;
 }
 
 .nav-links a:not(:last-child) {
@@ -154,6 +162,10 @@
 @media (max-width: 640px) {
   .nav-links {
     display: none;
+  }
+
+  .nav-links a:hover,.nav-links a:active,.nav-links a:focus {
+    @apply text-primarycharcoalblack;
   }
 
   .nav-social {
