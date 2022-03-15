@@ -285,7 +285,6 @@ body {
     @apply bg-primarypurple;
     width: 3px;
     height: 28px;
-    /* background: rgb(224, 178, 25); */
     position: absolute;
     right: -3px;
     top: 23%;

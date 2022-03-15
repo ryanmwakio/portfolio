@@ -45,7 +45,9 @@
   -ms-transition: all 0.4s;
   -o-transition: all 0.4s;
 }
-.nav-links a:hover,.nav-links a:active,.nav-links a:focus {
+.nav-links a:hover,
+.nav-links a:active,
+.nav-links a:focus {
   @apply text-primarypink;
 }
 
@@ -164,7 +166,9 @@
     display: none;
   }
 
-  .nav-links a:hover,.nav-links a:active,.nav-links a:focus {
+  .nav-links a:hover,
+  .nav-links a:active,
+  .nav-links a:focus {
     @apply text-primarycharcoalblack;
   }
 
@@ -232,7 +236,7 @@
     left: 0;
     height: 100vh;
     background: linear-gradient(to bottom right, #bd0f71, #8826d1);
-    z-index: 50;
+    z-index: 100;
     width: 100%;
   }
 
@@ -253,7 +257,7 @@
     background: rgba(255, 255, 255, 0.014);
     width: 50px;
     height: 50px;
-    z-index: 100;
+    z-index: 120;
     cursor: pointer;
     border-top-right-radius: 7px;
     border-bottom-left-radius: 7px;

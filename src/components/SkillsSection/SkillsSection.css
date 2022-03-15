@@ -1,0 +1,67 @@
+.skills-section {
+  @apply bg-primarycharcoalblack;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-item {
+  @apply bg-primaryblack py-20 px-10 my-10 flex justify-center flex-col align-middle cursor-pointer;
+  z-index: 10;
+  position: relative;
+  cursor: crosshair;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+
+.skill-item-active {
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skill-description {
+  @apply text-white;
+  font-size: 0.8rem;
+}
+
+.skill-list {
+  @apply text-white my-5;
+  font-size: 0.8rem;
+  width: 100%;
+}
+
+.skill-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: right;
+  background: linear-gradient(to right, #4f4d4d, #8a8888);
+  background: -webkit-linear-gradient(to right, #4f4d4d, #8a8888);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient {
+  background: linear-gradient(to bottom right, #bd0f71, #bd0f71, #8826d1);
+  background: -webkit-linear-gradient(
+    to bottom right,
+    #bd0f71,
+    #bd0f71,
+    #8826d1
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.corner-graphic {
+  @apply bg-transparent;
+  width: 30px;
+  height: 30px;
+  border-top: 3px solid;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  border-top: 3px solid #8826d1;
+  border-right: 3px solid #8826d1;
+}
