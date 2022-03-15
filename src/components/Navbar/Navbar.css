@@ -1,0 +1,66 @@
+.navigation {
+  position: absolute;
+  top: 4%;
+  left: 10%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 90;
+}
+
+.nav-brand a {
+  @apply text-white cursor-pointer;
+  font-family: library3am;
+  font-size: 2.5rem;
+}
+
+.nav-links {
+  @apply text-white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.nav-links a {
+  @apply cursor-pointer;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+.nav-links a:hover,
+.nav-links a:active,
+.nav-links a:focus {
+  @apply text-primarypink;
+}
+
+.nav-links a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.nav-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-social a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.nav-social img {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.menu {
+  display: none;
+}

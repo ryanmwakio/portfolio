@@ -1,18 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./HeroSection.css";
-import figmaIcon from "../../assets/icons/figma.svg";
-import githubIcon from "../../assets/icons/github.svg";
+
 import phoneImg1 from "../../assets/images/phone-img-1.jpg";
 import phoneImg2 from "../../assets/images/phone-img-2.jpg";
-import MenuButton from "../MenuButton/MenuButton";
+
 
 function HeroSection() {
-  let [showNav, setShowNav] = useState(false);
-
-  let handleToggleNav = () => {
-    setShowNav(!showNav);
-  };
+ 
   return (
     <>
       <section className="hero-section">
@@ -22,44 +17,7 @@ function HeroSection() {
           <div className="line-vertical-right"></div>
           <div className="node-top-right"></div>
         </div>
-        <nav className="navigation">
-          <div className="nav-brand">
-            <Link to="/">R</Link>
-          </div>
 
-          <div className="menu" onClick={handleToggleNav}>
-            <MenuButton/>
-          </div>
-          <div
-            className={`nav-links ${showNav ? "nav-links-mobile" : "hide"} `}
-          >
-            <Link to="/">Home</Link>
-
-            <Link to="/">Skills</Link>
-
-            <Link to="/">Projects</Link>
-
-            <Link to="/">Contact</Link>
-          </div>
-          <div className="nav-social">
-            <a
-              href="http://"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="github"
-            >
-              <img src={githubIcon} alt="" />
-            </a>
-            <a
-              href="http://"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="figma"
-            >
-              <img src={figmaIcon} alt="" />
-            </a>
-          </div>
-        </nav>
 
         <div className="name">
           <h6>Ryan Mwakio</h6>
