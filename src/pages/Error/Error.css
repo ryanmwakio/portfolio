@@ -1,6 +1,31 @@
 .error-page {
+  @apply bg-primarycharcoalblack;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+}
+
+.error-graphic {
+  background: linear-gradient(to bottom right, #bd0f71, #8826d1);
+  background: -webkit-linear-gradient(to bottom right, #bd0f71, #8826d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.error-graphic > h4 {
+  font-size: 5rem;
+  font-weight: 900;
+  display: block;
+}
+
+.error-graphic a {
+  width: 100%;
+  display: inline;
+}
+
+.back-link {
+  display: inline;
+  width: 20vh;
 }
