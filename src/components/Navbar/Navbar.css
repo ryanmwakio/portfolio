@@ -37,6 +37,10 @@
   @apply text-primarypink;
 }
 
+.slected {
+  @apply text-primarypink;
+}
+
 .nav-links a:not(:last-child) {
   margin-right: 20px;
 }
