@@ -80,7 +80,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    right: 8%;
+    right: -4%;
     top: 6%;
     background: rgba(255, 255, 255, 0.014);
     width: 50px;
@@ -94,5 +94,9 @@
 
   .nav-sticky {
     width: 100%;
+  }
+
+  .nav-sticky .menu {
+    right: 8%;
   }
 }

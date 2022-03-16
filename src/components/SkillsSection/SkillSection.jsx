@@ -58,17 +58,18 @@ function SkillSection() {
               perspiciatis beatae expedita.
             </p>
             <p className="skill-list">
-              Figma &nbsp;&nbsp;|&nbsp;&nbsp; Adobe XD &nbsp;&nbsp;|&nbsp;&nbsp;
-              Adobe Photoshop &nbsp;&nbsp;|&nbsp;&nbsp; Tailwind
-              &nbsp;&nbsp;|&nbsp;&nbsp; Bootstrap
-              &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Css
+              React &nbsp;&nbsp;|&nbsp;&nbsp; React Native
+              &nbsp;&nbsp;|&nbsp;&nbsp; Javascript &nbsp;&nbsp;|&nbsp;&nbsp;
+              Typescript &nbsp;&nbsp;|&nbsp;&nbsp; Node
+              &nbsp;&nbsp;|&nbsp;&nbsp;jQuery
+              &nbsp;&nbsp;|&nbsp;&nbsp;MySQL&nbsp;&nbsp;|&nbsp;&nbsp;Mongodb
             </p>
 
             <h1 className={`skill-title ${active2 ? "text-gradient" : ""}`}>
               develop
             </h1>
           </div>
-          
+
           <div
             className={`skill-item ${active3 ? "skill-item-active" : ""}`}
             onMouseEnter={handleActive3}
@@ -82,10 +83,8 @@ function SkillSection() {
               perspiciatis beatae expedita.
             </p>
             <p className="skill-list">
-              Figma &nbsp;&nbsp;|&nbsp;&nbsp; Adobe XD &nbsp;&nbsp;|&nbsp;&nbsp;
-              Adobe Photoshop &nbsp;&nbsp;|&nbsp;&nbsp; Tailwind
-              &nbsp;&nbsp;|&nbsp;&nbsp; Bootstrap
-              &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Css
+              Agile &nbsp;&nbsp;|&nbsp;&nbsp; Scrum &nbsp;&nbsp;|&nbsp;&nbsp;
+              Kanban &nbsp;&nbsp;|&nbsp;&nbsp; git & github
             </p>
 
             <h1 className={`skill-title ${active3 ? "text-gradient" : ""}`}>
