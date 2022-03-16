@@ -4,6 +4,7 @@ import "./HeroSection.css";
 
 import phoneImg1 from "../../assets/images/phone-img-1.jpg";
 import phoneImg2 from "../../assets/images/phone-img-2.jpg";
+import { HashLink } from "react-router-hash-link";
 
 function HeroSection() {
   return (
@@ -89,7 +90,9 @@ function HeroSection() {
         </div>
 
         <div className="hero-cta btn">
-          <Link to="/">my work</Link>
+          <HashLink to="/#projects" smooth>
+            my work
+          </HashLink>
         </div>
       </section>
     </>
