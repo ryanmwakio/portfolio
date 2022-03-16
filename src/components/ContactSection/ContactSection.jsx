@@ -6,9 +6,14 @@ import "./ContactSection.css";
 
 function ContactSection() {
   const notify = () =>
-    toast("Sorry the functionality has not yet been wired by Ryan, chillax", {
+    toast.info("functionality not configured yet", {
       position: "top-center",
-      autoClose: 3000,
+      autoClose: 1300,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
     });
 
   let handleSubmit = (e) => {
@@ -17,7 +22,18 @@ function ContactSection() {
 
   return (
     <>
-      <ToastContainer />
+      <ToastContainer
+        position="top-center"
+        autoClose={1300}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
       <div className="contact-section" id="contacts">
         <div className="line-vertical-right"></div>
         {/* <div className="line-vertical-left"></div> */}
