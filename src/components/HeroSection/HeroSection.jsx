@@ -5,19 +5,16 @@ import "./HeroSection.css";
 import phoneImg1 from "../../assets/images/phone-img-1.jpg";
 import phoneImg2 from "../../assets/images/phone-img-2.jpg";
 
-
 function HeroSection() {
- 
   return (
     <>
-      <section className="hero-section">
+      <section className="hero-section" id="hero">
         <div className="hero-left-section">
           <div className="line-vertical-left"></div>
           <div className="node-bottom-left"></div>
           <div className="line-vertical-right"></div>
           <div className="node-top-right"></div>
         </div>
-
 
         <div className="name">
           <h6>Ryan Mwakio</h6>

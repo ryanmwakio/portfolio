@@ -17,7 +17,7 @@ function SkillSection() {
   };
   return (
     <>
-      <div className="skills-section">
+      <div className="skills-section" id="skills">
         <div className="line-vertical-right"></div>
 
         <div className="flex flex-col space-x-4 md:flex-row justify-center mx-8 md:mx-28 my-10  ">

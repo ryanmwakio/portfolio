@@ -5,7 +5,7 @@ import "./FooterSection.css";
 function FooterSection() {
   return (
     <>
-      <div className="footer-section">
+      <div className="footer-section" id="footer">
         <div className="footer-logo">
           <Link to="/">R</Link>
         </div>

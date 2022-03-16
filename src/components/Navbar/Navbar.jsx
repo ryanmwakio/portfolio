@@ -1,20 +1,38 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+
 import figmaIcon from "../../assets/icons/figma.svg";
 import githubIcon from "../../assets/icons/github.svg";
 import MenuButton from "../MenuButton/MenuButton";
 import "./Navbar.css";
+import { links } from "./data";
 
 function Navbar() {
   let [showNav, setShowNav] = useState(false);
+  let [pageYOffset, setPageYOffset] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, [pageYOffset]);
 
   let handleToggleNav = () => {
     setShowNav(!showNav);
   };
+
+  let handleScroll = () => {
+    let scrollHeight = window.scrollY;
+    setPageYOffset(scrollHeight);
+  };
+
   return (
     <>
       {" "}
-      <nav className="navigation">
+      <nav
+        className={`navigation ${
+          pageYOffset > 63 ? "nav-sticky" : "nav-absolute"
+        }`}
+      >
         <div className="nav-brand">
           <Link to="/">R</Link>
         </div>
@@ -23,13 +41,13 @@ function Navbar() {
           <MenuButton />
         </div>
         <div className={`nav-links ${showNav ? "nav-links-mobile" : "hide"} `}>
-          <Link to="/">Home</Link>
-
-          <Link to="/">Skills</Link>
-
-          <Link to="/">Projects</Link>
-
-          <Link to="/">Contact</Link>
+          {links.map((link) => {
+            return (
+              <HashLink to={`/${link.url}`} key={link.id}>
+                {link.text}
+              </HashLink>
+            );
+          })}
         </div>
         <div className="nav-social">
           <a

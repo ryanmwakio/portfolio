@@ -7,7 +7,7 @@ import project3img from "../../assets/images/project-3.jpg";
 function ProjectsSection() {
   return (
     <>
-      <div className="projects-section">
+      <div className="projects-section" id="projects">
         <div className="line-vertical-right"></div>
         <div className="my-16">
           <div className="project">

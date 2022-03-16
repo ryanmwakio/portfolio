@@ -1,5 +1,4 @@
 .navigation {
-  position: absolute;
   top: 4%;
   left: 10%;
   width: 80%;
@@ -63,4 +62,37 @@
 
 .menu {
   display: none;
+}
+
+.nav-absolute {
+  position: absolute;
+}
+
+.nav-sticky {
+  @apply bg-primaryblack px-8;
+  position: sticky;
+  width: 80%;
+}
+
+@media (max-width: 640px) {
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 8%;
+    top: 6%;
+    background: rgba(255, 255, 255, 0.014);
+    width: 50px;
+    height: 50px;
+    z-index: 120;
+    cursor: pointer;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    padding: 1rem;
+  }
+
+  .nav-sticky {
+    width: 100%;
+  }
 }
