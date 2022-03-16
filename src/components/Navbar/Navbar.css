@@ -98,6 +98,7 @@
 
   .nav-sticky {
     width: 100%;
+    background: transparent;
   }
 
   .nav-sticky .menu {

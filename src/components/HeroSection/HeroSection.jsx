@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import "./HeroSection.css";
 
 import phoneImg1 from "../../assets/images/phone-img-1.jpg";
@@ -7,6 +6,18 @@ import phoneImg2 from "../../assets/images/phone-img-2.jpg";
 import { HashLink } from "react-router-hash-link";
 
 function HeroSection() {
+  let [pageYOffset, setPageYOffset] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [pageYOffset]);
+
+  let handleScroll = () => {
+    let scrollHeight = window.scrollY;
+    setPageYOffset(scrollHeight);
+  };
   return (
     <>
       <section className="hero-section" id="hero">
@@ -23,7 +34,10 @@ function HeroSection() {
         <div className="title-1">
           <h1>software</h1>
         </div>
-        <div className="mobile-graphic-1">
+        <div
+          className="mobile-graphic-1"
+          style={{ transform: `translateY(${pageYOffset * 0.07}px)` }}
+        >
           <div className="phone">
             <div className="phone-outer-frame">
               <div className="phone-left-btn-1"></div>

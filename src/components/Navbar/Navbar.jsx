@@ -7,6 +7,7 @@ import githubIcon from "../../assets/icons/github.svg";
 import MenuButton from "../MenuButton/MenuButton";
 import "./Navbar.css";
 import { links } from "./data";
+import { Slide } from "react-reveal";
 
 function Navbar() {
   let [showNav, setShowNav] = useState(false);
@@ -14,6 +15,8 @@ function Navbar() {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [pageYOffset]);
 
   let handleToggleNav = () => {
@@ -29,7 +32,7 @@ function Navbar() {
     <>
       {" "}
       <nav
-        className={`navigation ${
+        className={`navigation container ${
           pageYOffset > 63 ? "nav-sticky" : "nav-absolute"
         }`}
       >
@@ -43,12 +46,7 @@ function Navbar() {
         <div className={`nav-links ${showNav ? "nav-links-mobile" : "hide"} `}>
           {links.map((link) => {
             return (
-              <NavHashLink
-                to={`/${link.url}`}
-                key={link.id}
-                activeClassName="selected"
-                smooth
-              >
+              <NavHashLink to={`/${link.url}`} key={link.id} smooth>
                 {link.text}
               </NavHashLink>
             );
