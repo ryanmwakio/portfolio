@@ -7,7 +7,6 @@ import githubIcon from "../../assets/icons/github.svg";
 import MenuButton from "../MenuButton/MenuButton";
 import "./Navbar.css";
 import { links } from "./data";
-import { Slide } from "react-reveal";
 
 function Navbar() {
   let [showNav, setShowNav] = useState(false);
@@ -33,7 +32,7 @@ function Navbar() {
       {" "}
       <nav
         className={`navigation container ${
-          pageYOffset > 63 ? "nav-sticky" : "nav-absolute"
+          pageYOffset > 63 ? "nav-absolute" : "nav-absolute"
         }`}
       >
         <div className="nav-brand">

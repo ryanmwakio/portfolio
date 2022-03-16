@@ -410,3 +410,15 @@ body {
     right: 0;
   }
 }
+
+.to-top {
+  position: fixed;
+  z-index: 80;
+  bottom: 8%;
+  right: 5%;
+  @apply bg-primaryblack w-10 h-10 text-primarypink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}

@@ -7,7 +7,7 @@ function FooterSection() {
     <>
       <div className="footer-section" id="footer">
         <div className="footer-logo">
-          <Link to="/">R</Link>
+          <Link to="/"></Link>
         </div>
         <div className="footer-info">
           All rights reserved&nbsp;&nbsp;|&nbsp;&nbsp; Ryan Mwakio
