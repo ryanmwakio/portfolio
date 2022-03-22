@@ -53,7 +53,6 @@
   font-size: 3rem;
   font-weight: 900;
   z-index: 32;
-  text-shadow: -3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero-cta {
@@ -92,7 +91,7 @@
 .btn:focus,
 .btn:hover,
 .btn:active {
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 640px) {
@@ -124,7 +123,6 @@
     z-index: 32;
     font-size: 1.2rem;
     font-weight: 400;
-    text-shadow: -1px 1px 10px rgba(0, 0, 0, 0.2);
   }
   .title-1 {
     @apply text-white;
@@ -134,7 +132,6 @@
     font-size: 2rem;
     font-weight: 900;
     z-index: 32;
-    text-shadow: -1px 1px 10px rgba(0, 0, 0, 0.2);
   }
 
   .mobile-graphic-2 {
@@ -152,12 +149,10 @@
     font-size: 2rem;
     font-weight: 900;
     z-index: 32;
-    text-shadow: -1px 1px 10px rgba(0, 0, 0, 0.2);
   }
 
   .hero-cta {
     z-index: 32;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
   }
 
   .nav-links-mobile {
@@ -180,8 +175,6 @@
     text-align: left;
     margin-left: 40%;
   }
-
- 
 }
 
 @media (max-width: 1024px) {
@@ -193,7 +186,6 @@
     z-index: 32;
     font-size: 1.2rem;
     font-weight: 400;
-    text-shadow: -3px 3px 10px rgba(0, 0, 0, 0.3);
   }
   .title-1 {
     @apply text-white;
@@ -203,12 +195,10 @@
     font-size: 2rem;
     font-weight: 900;
     z-index: 32;
-    text-shadow: -3px 3px 10px rgba(0, 0, 0, 0.3);
   }
 
   .hero-cta {
     border-radius: 30px;
     z-index: 32;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
   }
 }

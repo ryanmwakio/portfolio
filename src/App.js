@@ -8,23 +8,32 @@ import Home from "./pages/Home/Home";
 import HashLoader from "react-spinners/HashLoader";
 import { HashLink } from "react-router-hash-link";
 import Fade from "react-reveal/Fade";
+import ProgressBar from "react-scroll-progress-bar";
 
 function App() {
-  const [loading, setLoading] = useState(false);
-  let [showToTop, setShowToTop] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   let [pageYOffset, setPageYOffset] = useState(0);
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    console.log(pageYOffset);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [pageYOffset]);
+  const handleLoading = () => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  };
 
   let handleScroll = () => {
     let scrollHeight = window.scrollY;
     setPageYOffset(scrollHeight);
   };
+
+  useEffect(() => {
+    window.addEventListener("load", handleLoading);
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("load", handleLoading);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [pageYOffset]);
 
   const override = {
     display: "block",
@@ -33,19 +42,13 @@ function App() {
     backGround: "#232427",
   };
 
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 2300);
-  }, []);
   return (
     <>
       <div className="container">
-        {loading ? (
+        {isLoading ? (
           <HashLoader
             color={"#BD0F71"}
-            loading={loading}
+            loading={isLoading}
             css={override}
             size={50}
             backGround="#232427"
@@ -58,6 +61,7 @@ function App() {
               <title>Ryan M | Software Developer</title>
               <link rel="canonical" href="http://mysite.com/example" />
             </Helmet>
+            <ProgressBar bgcolor="#BD0F71" />
 
             <Fade bottom>
               <div className={`${pageYOffset > 578 ? "to-top" : "hide"}`}>

@@ -53,7 +53,7 @@ function Navbar() {
         </div>
         <div className="nav-social">
           <a
-            href="http://"
+            href="https://github.com/ryanmwakio"
             target="_blank"
             rel="noopener noreferrer"
             title="github"
@@ -61,7 +61,7 @@ function Navbar() {
             <img src={githubIcon} alt="" />
           </a>
           <a
-            href="http://"
+            href="https://www.figma.com/@ryanmwakio"
             target="_blank"
             rel="noopener noreferrer"
             title="figma"

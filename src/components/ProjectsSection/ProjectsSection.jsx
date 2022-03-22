@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./ProjectsSection.css";
 import project1img from "../../assets/images/project-1.jpg";
 import project2img from "../../assets/images/project-2.jpg";
@@ -6,13 +6,27 @@ import project3img from "../../assets/images/project-3.jpg";
 import { Fade } from "react-reveal";
 
 function ProjectsSection() {
+  let [pageYOffset, setPageYOffset] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [pageYOffset]);
+
+  let handleScroll = () => {
+    let scrollHeight = window.scrollY;
+    setPageYOffset(scrollHeight);
+  };
   return (
     <>
       <div className="projects-section" id="projects">
         <div className="line-vertical-right"></div>
         <div className="my-16">
           <Fade bottom>
-            <div className="project">
+            <div
+              className="project"
+            >
               <img src={project1img} alt="" className="project-img" />
 
               <div className="project-overlay"></div>

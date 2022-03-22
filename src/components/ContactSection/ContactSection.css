@@ -16,7 +16,7 @@
 }
 
 .my-form {
-  width: 100%;
+  width: 80%;
 }
 
 .form-group {
@@ -26,7 +26,7 @@
 
 .form-group input,
 .form-group textarea {
-  @apply border-b  border-primarygrey text-primarygrey p-5;
+  @apply border-b  border-primarygrey text-primarygrey py-1;
   width: 100%;
   background: none;
   resize: none;
@@ -46,13 +46,9 @@
   @apply text-white;
   width: 100%;
   background: linear-gradient(to right, #e30057, #8826d1);
-  padding: 10px 0px;
-  font-size: 0.8rem;
+  padding: 7px 0px;
+  font-size: 0.7rem;
   border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
   box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -69,7 +65,8 @@
 
 .my-email {
   @apply text-white;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
 }
 
 @media (max-width: 640px) {

@@ -416,7 +416,7 @@ body {
   z-index: 80;
   bottom: 8%;
   right: 5%;
-  @apply bg-primaryblack w-10 h-10 text-primarypink;
+  @apply bg-primaryblack w-10 h-10 text-white;
   display: flex;
   justify-content: center;
   align-items: center;

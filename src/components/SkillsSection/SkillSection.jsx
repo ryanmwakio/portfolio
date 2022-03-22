@@ -30,7 +30,9 @@ function SkillSection() {
               onMouseEnter={handleActive1}
               onMouseLeave={handleActive1}
             >
-              <div className={active1 ? "corner-graphic" : "hide"}></div>
+              <Fade bottom>
+                <div className={active1 ? "corner-graphic" : "hide"}></div>
+              </Fade>
 
               <p className="skill-description">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
@@ -57,7 +59,9 @@ function SkillSection() {
               onMouseEnter={handleActive2}
               onMouseLeave={handleActive2}
             >
-              <div className={active2 ? "corner-graphic" : "hide"}></div>
+              <Fade bottom>
+                <div className={active2 ? "corner-graphic" : "hide"}></div>
+              </Fade>
               <p className="skill-description">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
                 quibusdam sint est magnam error iusto iste. Laboriosam ea
@@ -84,7 +88,9 @@ function SkillSection() {
               onMouseEnter={handleActive3}
               onMouseLeave={handleActive3}
             >
-              <div className={active3 ? "corner-graphic" : "hide"}></div>
+              <Fade bottom>
+                <div className={active3 ? "corner-graphic" : "hide"}></div>
+              </Fade>
               <p className="skill-description">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
                 quibusdam sint est magnam error iusto iste. Laboriosam ea

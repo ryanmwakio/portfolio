@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./HeroSection.css";
+import Typist from "react-text-typist";
 
 import phoneImg1 from "../../assets/images/phone-img-1.jpg";
 import phoneImg2 from "../../assets/images/phone-img-2.jpg";
@@ -103,7 +104,23 @@ function HeroSection() {
         </div>
 
         <div className="title-2">
-          <h1>developer</h1>
+          <h1>
+            <Typist
+              sentences={[
+                "developer",
+                "artisan",
+                "designer",
+                "virtuoso",
+                "nerd",
+              ]}
+              loop={true}
+              typingSpeed={100}
+              pauseTime={1500}
+              deletingSpeed={80}
+              startDelay={30}
+              cursorSmooth={true}
+            />
+          </h1>
         </div>
 
         <div className="hero-cta btn">
