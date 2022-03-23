@@ -4,6 +4,7 @@ import project1img from "../../assets/images/project-1.jpg";
 import project2img from "../../assets/images/project-2.jpg";
 import project3img from "../../assets/images/project-3.jpg";
 import { Fade } from "react-reveal";
+import { Link } from "react-router-dom";
 
 function ProjectsSection() {
   let [pageYOffset, setPageYOffset] = useState(0);
@@ -24,9 +25,7 @@ function ProjectsSection() {
         <div className="line-vertical-right"></div>
         <div className="my-16">
           <Fade bottom>
-            <div
-              className="project"
-            >
+            <div className="project">
               <img src={project1img} alt="" className="project-img" />
 
               <div className="project-overlay"></div>
@@ -110,7 +109,7 @@ function ProjectsSection() {
               <img src={project3img} alt="" className="project-img" />
 
               <div className="project-overlay"></div>
-              <h3 className="project-name">e-med system UI</h3>
+              <h3 className="project-name">e-med UI</h3>
               <div className="project-dots">
                 <span className="project-rounded-graphic dot-bg-green"></span>
                 <span className="project-rounded-graphic dot-bg-green"></span>
@@ -145,6 +144,7 @@ function ProjectsSection() {
               </div>
             </div>
           </Fade>
+          
         </div>
         ;
       </div>

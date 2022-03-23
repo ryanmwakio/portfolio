@@ -9,6 +9,7 @@ import HashLoader from "react-spinners/HashLoader";
 import { HashLink } from "react-router-hash-link";
 import Fade from "react-reveal/Fade";
 import ProgressBar from "react-scroll-progress-bar";
+import Projects from "./pages/Projects/Projects";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -88,6 +89,7 @@ function App() {
 
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
               <Route path="*" element={<Error />} />
             </Routes>
           </div>

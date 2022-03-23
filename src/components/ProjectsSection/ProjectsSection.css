@@ -24,9 +24,9 @@
 }
 
 .project-img {
-  @apply py-20;
-  width: 55%;
-  margin: 10px auto;
+  @apply py-10;
+  width: 50%;
+  margin: 0px auto;
 }
 
 .project-name {
@@ -143,4 +143,24 @@
     background: transparent;
     width: 100%;
   }
+
+  .project-img {
+    @apply py-20;
+  }
+}
+
+.other-projects a {
+  @apply bg-primarypurple text-white;
+  font-size: 0.7rem;
+  background: linear-gradient(to right, #bd0f71, #8826d1);
+  text-transform: lowercase;
+  padding: 8px 37px;
+  border-radius: 100px;
+  transition: all 0.3s;
+}
+
+.other-projects a:hover,
+.other-projects a:active {
+  box-shadow: -5px 3px 8px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(to right, #8826d1, #bd0f71);
 }

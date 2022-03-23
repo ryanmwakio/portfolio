@@ -55,6 +55,7 @@
 .form-group button:hover,
 .form-group button:active {
   box-shadow: -5px 3px 8px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(to right, #8826d1, #bd0f71);
 }
 
 .form-group label {

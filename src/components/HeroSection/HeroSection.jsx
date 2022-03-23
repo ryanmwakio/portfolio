@@ -37,7 +37,7 @@ function HeroSection() {
         </div>
         <div
           className="mobile-graphic-1"
-          style={{ transform: `translateY(${pageYOffset * 0.03}px)` }}
+          style={{ transform: `translateY(${pageYOffset * 0.08}px)` }}
         >
           <div className="phone">
             <div className="phone-outer-frame">
@@ -71,7 +71,7 @@ function HeroSection() {
 
         <div
           className="mobile-graphic-2"
-          style={{ transform: `translateY(-${pageYOffset * 0.02}px)` }}
+          style={{ transform: `translateY(-${pageYOffset * 0.08}px)` }}
         >
           <div className="phone">
             <div className="phone-outer-frame">
