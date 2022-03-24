@@ -22,6 +22,7 @@ function ProjectsSection() {
   return (
     <>
       <div className="projects-section" id="projects">
+        <div className="project-section-bg"></div>
         <div className="line-vertical-right"></div>
         <div className="my-16">
           <Fade bottom>
@@ -144,9 +145,7 @@ function ProjectsSection() {
               </div>
             </div>
           </Fade>
-          
         </div>
-        ;
       </div>
     </>
   );

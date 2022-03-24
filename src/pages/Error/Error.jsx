@@ -12,7 +12,7 @@ function Error() {
             Go to home page{" "}
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-6 w-6 text-primarypurple inline-block"
+              className="h-6 w-6 text-primarypurple inline-block"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"

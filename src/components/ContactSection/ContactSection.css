@@ -6,7 +6,7 @@
 
 .form-section {
   @apply bg-primaryblack;
-  margin: 0px auto 6rem auto;
+  margin: 3rem auto 3rem auto;
   width: 55%;
   position: relative;
   z-index: 10;
