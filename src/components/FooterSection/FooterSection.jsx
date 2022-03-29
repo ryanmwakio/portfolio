@@ -10,7 +10,8 @@ function FooterSection() {
           <Link to="/"></Link>
         </div>
         <div className="footer-info">
-          All rights reserved&nbsp;&nbsp;|&nbsp;&nbsp; Ryan Mwakio
+          &copy;{new Date().getFullYear()}&nbsp;&nbsp;All rights reserved
+          &nbsp;&nbsp;|&nbsp;&nbsp; Ryan Mwakio
         </div>
         <div></div>
       </div>

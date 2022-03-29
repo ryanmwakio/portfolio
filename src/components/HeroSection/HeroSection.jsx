@@ -108,10 +108,12 @@ function HeroSection() {
             <Typist
               sentences={[
                 "developer",
-                "artisan",
                 "designer",
+                "artisan",
                 "virtuoso",
-                "nerd",
+                "ninja",
+                "whizz",
+                "ace",
               ]}
               loop={true}
               typingSpeed={100}

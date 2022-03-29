@@ -23,6 +23,7 @@ function ProjectsSection() {
     <>
       <div className="projects-section" id="projects">
         <div className="project-section-bg"></div>
+
         <div className="line-vertical-right"></div>
         <div className="my-16">
           <Fade bottom>
@@ -31,11 +32,11 @@ function ProjectsSection() {
 
               <div className="project-overlay"></div>
               <h3 className="project-name">Dashboard UI</h3>
-              <div className="project-dots">
+              {/* <div className="project-dots">
                 <span className="project-rounded-graphic dot-bg-purple"></span>
                 <span className="project-rounded-graphic dot-bg-purple"></span>
                 <span className="project-rounded-graphic dot-bg-purple"></span>
-              </div>
+              </div> */}
               <div className="project-description">
                 <div className="project-description-content">
                   <div className="border-left bg-primarypurple"></div>
@@ -71,11 +72,11 @@ function ProjectsSection() {
 
               <div className="project-overlay"></div>
               <h3 className="project-name">Naidelivery</h3>
-              <div className="project-dots">
+              {/* <div className="project-dots">
                 <span className="project-rounded-graphic dot-bg-orange"></span>
                 <span className="project-rounded-graphic dot-bg-orange"></span>
                 <span className="project-rounded-graphic dot-bg-orange"></span>
-              </div>
+              </div> */}
               <div className="project-description">
                 <div className="project-description-content">
                   <div className="border-left bg-primaryorange"></div>
@@ -111,11 +112,11 @@ function ProjectsSection() {
 
               <div className="project-overlay"></div>
               <h3 className="project-name">e-med UI</h3>
-              <div className="project-dots">
+              {/* <div className="project-dots">
                 <span className="project-rounded-graphic dot-bg-green"></span>
                 <span className="project-rounded-graphic dot-bg-green"></span>
                 <span className="project-rounded-graphic dot-bg-green"></span>
-              </div>
+              </div> */}
               <div className="project-description">
                 <div className="project-description-content">
                   <div className="border-left bg-primarygreen"></div>

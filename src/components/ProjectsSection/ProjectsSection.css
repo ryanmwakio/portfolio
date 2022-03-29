@@ -43,8 +43,8 @@
   @apply text-white;
   position: absolute;
   text-align: center;
-  top: 37%;
-  left: 40%;
+  top: 45%;
+  left: 45%;
   font-weight: 900;
   font-size: 2rem;
 }
@@ -124,7 +124,7 @@
 
 @media (max-width: 640px) {
   .project-img {
-    width: 95%;
+    width: 100%;
   }
 
   .project-name {
