@@ -1,7 +1,6 @@
 # PORTFOLIO Ryan Mwakio
 
 ![portfolio image](./src/assets/cover1.png)
-![portfolio image](./src/assets/cover2.png)
 figma design can be found here [portfolio figma design](<https://www.figma.com/file/DJzQZPPSm3Wm4P9FgTPoAB/portfolio-(Community)?node-id=0%3A1>)
 
 ## Description:
