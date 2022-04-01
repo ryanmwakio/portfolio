@@ -35,7 +35,7 @@
 
 .project-img {
   @apply py-10;
-  width: 50%;
+  width: 52%;
   margin: 0px auto;
 }
 
@@ -114,6 +114,11 @@
   display: flex;
   justify-content: space-around;
   font-size: 0.8rem;
+}
+
+.project-links span {
+  @apply text-white;
+  font-size: 1rem;
 }
 
 .project-description-text {

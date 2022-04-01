@@ -65,8 +65,8 @@ function ContactSection() {
         theme="dark"
       />
       <div className="contact-section" id="contacts">
-        {/* <div className="line-vertical-right"></div> */}
-        {/* <div className="line-vertical-left"></div> */}
+        <div className="line-vertical-right"></div>
+        <div className="line-vertical-left"></div>
         <Fade bottom>
           <div className="form-section  my-10 py-10 px-16 md:px-28">
             <div className="my-form">

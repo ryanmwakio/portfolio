@@ -35,10 +35,12 @@ function SkillSection() {
               </Fade>
 
               <p className="skill-description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
-                quibusdam sint est magnam error iusto iste. Laboriosam ea
-                tempore veniam quasi iusto dolorum tempora ipsa fuga quaerat
-                nulla hic perspiciatis beatae expedita.
+                Transforming user requirements into some suitable form, which
+                helps in software coding and implementation. I try to represent
+                requirements as is the software requirements specification (SRS)
+                and the software design specification (SDS). It's among the
+                first phase of the software development life cycle (SDLC). Tools
+                I use include,
               </p>
               <p className="skill-list">
                 Figma &nbsp;&nbsp;|&nbsp;&nbsp; Adobe XD
@@ -63,10 +65,11 @@ function SkillSection() {
                 <div className={active2 ? "corner-graphic" : "hide"}></div>
               </Fade>
               <p className="skill-description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
-                quibusdam sint est magnam error iusto iste. Laboriosam ea
-                tempore veniam quasi iusto dolorum tempora ipsa fuga quaerat
-                nulla hic perspiciatis beatae expedita.
+                Building products that meet technical specification. During
+                development I try to go through needs identification,
+                requirements analysis, development and implementation, testing
+                and finally deployment and maintenance. Tools I use include but
+                not limited to,
               </p>
               <p className="skill-list">
                 React &nbsp;&nbsp;|&nbsp;&nbsp; React Native
@@ -92,10 +95,10 @@ function SkillSection() {
                 <div className={active3 ? "corner-graphic" : "hide"}></div>
               </Fade>
               <p className="skill-description">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
-                quibusdam sint est magnam error iusto iste. Laboriosam ea
-                tempore veniam quasi iusto dolorum tempora ipsa fuga quaerat
-                nulla hic perspiciatis beatae expedita.
+                Developing through a series of iterations of planning, doing,
+                checking and adjustments. This helps my workflow through
+                shortening development cycles and just in time analysis of
+                requests. Tools and processes I use include,
               </p>
               <p className="skill-list">
                 Agile &nbsp;&nbsp;|&nbsp;&nbsp; Scrum &nbsp;&nbsp;|&nbsp;&nbsp;
