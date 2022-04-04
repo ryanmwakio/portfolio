@@ -127,6 +127,13 @@
   z-index: 25;
 }
 
+.technology-class {
+  font-size: 0.7rem;
+  margin-right: 1rem;
+  letter-spacing: 0.1rem;
+  margin-top: 0.3rem;
+}
+
 @media (max-width: 640px) {
   .project-img {
     width: 100%;

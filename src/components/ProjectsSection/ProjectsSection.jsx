@@ -3,6 +3,7 @@ import "./ProjectsSection.css";
 import project1img from "../../assets/images/project-1.png";
 import project2img from "../../assets/images/project-2.png";
 import project3img from "../../assets/images/project-3.png";
+import project4img from "../../assets/images/project-4.png";
 import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 
@@ -33,6 +34,7 @@ function ProjectsSection() {
       platform: "web app",
       bgClass: "bg-primarypurple",
       textClass: "text-primarypurple",
+      technologies: ["react", "tailwindcss", "spotify api"],
     },
     {
       id: 2,
@@ -45,6 +47,7 @@ function ProjectsSection() {
       platform: "web app",
       bgClass: "bg-primaryorange",
       textClass: "text-primaryorange",
+      technologies: ["node", "express", "mongoDB", "tailwindcss", "ejs"],
     },
     {
       id: 3,
@@ -57,6 +60,20 @@ function ProjectsSection() {
       platform: "web app",
       bgClass: "bg-primarygreen",
       textClass: "text-primarygreen",
+      technologies: ["next", "react", "tailwindcss", "node"],
+    },
+    {
+      id: 4,
+      title: "task rest api",
+      description: `A task rest api that allows users to create, update, delete and view tasks. Technologies used are node, express, mongoDB, bcrypt and jwt. Complete with authentication and authorization. Note that some endpoints are not available for unauthenticated users.`,
+      image: project4img,
+      link: "https://task-rest.herokuapp.com/",
+      github: "https://github.com/ryanmwakio/task-api",
+      design: "",
+      platform: "web app",
+      bgClass: "bg-blue-400",
+      textClass: "text-blue-400",
+      technologies: ["node", "express", "mongoDB", "bcrypt", "jwt"],
     },
   ];
   return (
@@ -111,6 +128,16 @@ function ProjectsSection() {
 
                       <div className="project-description-text">
                         <p>{project.description}</p>
+                        {project.technologies.map((technology) => {
+                          return (
+                            <span
+                              key={technology}
+                              className={`technology-class ${project.textClass}`}
+                            >
+                              {technology}
+                            </span>
+                          );
+                        })}
                       </div>
                     </div>
                   </div>

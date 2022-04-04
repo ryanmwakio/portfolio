@@ -421,4 +421,5 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 0.8rem;
+  box-shadow: -2px 3px 6px rgba(0, 0, 0, 0.6);
 }
