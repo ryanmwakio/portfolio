@@ -230,7 +230,6 @@ body {
 .phone-content > img {
   height: 100%;
   width: 100%;
-  cursor: crosshair;
 }
 
 @media (max-width: 640px) {
@@ -392,7 +391,6 @@ body {
     height: 100%;
     width: 100%;
     opacity: 0.5;
-    cursor: pointer;
   }
 }
 
@@ -422,4 +420,67 @@ body {
   align-items: center;
   font-size: 0.8rem;
   box-shadow: -2px 3px 6px rgba(0, 0, 0, 0.6);
+}
+
+.cursor {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #8826d1;
+  border-radius: 50%;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  animation: cursorAnim 0.5s infinite alternate;
+  pointer-events: none;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor::after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  border: 8px solid #8726d17e;
+  border-radius: 50%;
+  opacity: 0.5;
+  animation: cursorAnim2 0.5s infinite alternate;
+}
+
+@keyframes cursorAnim {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+
+@keyframes cursorAnim2 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.4);
+  }
+}
+
+@keyframes cursorAnim3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+.expand {
+  animation: cursorAnim3 0.5s forwards;
+  border: 1px solid #bd0f71;
 }

@@ -19,9 +19,6 @@
   z-index: 20;
   overflow: hidden;
 }
-.project:hover {
-  cursor: crosshair;
-}
 
 .project-overlay {
   @apply px-28;
