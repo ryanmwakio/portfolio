@@ -19,6 +19,12 @@ install all node dependecies
 npm install
 ```
 
+note if install fails because of some libraries just use the force flag
+
+```bash
+npm install --force
+```
+
 run project
 
 ```bash

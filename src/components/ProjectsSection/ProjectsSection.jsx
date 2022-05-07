@@ -1,81 +1,81 @@
-import React, { useState, useEffect } from "react";
-import "./ProjectsSection.css";
-import project1img from "../../assets/images/project-1.png";
-import project2img from "../../assets/images/project-2.png";
-import project3img from "../../assets/images/project-3.png";
-import project4img from "../../assets/images/project-4.png";
-import { Fade } from "react-reveal";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react'
+import './ProjectsSection.css'
+import project1img from '../../assets/images/project-1.jpg'
+import project2img from '../../assets/images/project-2.jpg'
+import project3img from '../../assets/images/project-3.jpg'
+import project4img from '../../assets/images/project-4.jpg'
+import { Fade } from 'react-reveal'
+import { Link } from 'react-router-dom'
 
 function ProjectsSection() {
-  let [pageYOffset, setPageYOffset] = useState(0);
+  let [pageYOffset, setPageYOffset] = useState(0)
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll)
 
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [pageYOffset]);
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [pageYOffset])
 
   let handleScroll = () => {
-    let scrollHeight = window.scrollY;
-    setPageYOffset(scrollHeight);
-  };
+    let scrollHeight = window.scrollY
+    setPageYOffset(scrollHeight)
+  }
 
   let projects = [
     {
       id: 1,
-      title: "music player",
+      title: 'music player',
       description: `Music player frontend connected to the spotify api. The goal was to nicely present exposed spotify api endpoints and organize the data on an attractive frontend. Developed with React and Tailwind css.`,
       image: project1img,
-      link: "https://tunifi.netlify.app/",
-      github: "https://github.com/ryanmwakio/tunifi",
+      link: 'https://tunifi.netlify.app/',
+      github: 'https://github.com/ryanmwakio/tunifi',
       design:
-        "https://www.figma.com/file/oIIIcuS9LZrSXBDwm0WmU7/Music-Dashboard--Tunifi-(Community)?node-id=0%3A1",
-      platform: "web app",
-      bgClass: "bg-primarypurple",
-      textClass: "text-primarypurple",
-      technologies: ["react", "tailwindcss", "spotify api"],
+        'https://www.figma.com/file/oIIIcuS9LZrSXBDwm0WmU7/Music-Dashboard--Tunifi-(Community)?node-id=0%3A1',
+      platform: 'web app',
+      bgClass: 'bg-primarypurple',
+      textClass: 'text-primarypurple',
+      technologies: ['react', 'tailwindcss', 'spotify api'],
     },
     {
       id: 2,
-      title: "e-shop",
+      title: 'e-shop',
       description: ` eshop, an eccomerce platform for selling and buying goods ready with email integrations, complete auth process and invoice generation. Technologies used are node, express,tailwind, EJS and mongoDB.`,
       image: project3img,
-      link: "https://eshop-ke.herokuapp.com/",
-      github: "https://github.com/ryanmwakio/eshop",
-      design: "",
-      platform: "web app",
-      bgClass: "bg-primaryorange",
-      textClass: "text-primaryorange",
-      technologies: ["node", "express", "mongoDB", "tailwindcss", "ejs"],
+      link: 'https://eshop-ke.herokuapp.com/',
+      github: 'https://github.com/ryanmwakio/eshop',
+      design: '',
+      platform: 'web app',
+      bgClass: 'bg-primaryorange',
+      textClass: 'text-primaryorange',
+      technologies: ['node', 'express', 'mongoDB', 'tailwindcss', 'ejs'],
     },
     {
       id: 3,
-      title: "events UI",
+      title: 'events UI',
       description: ` An event web application that allows users to view available events and share them with other users. I used Next js a framework for react mainly cause I was quite intrigued with the file based routing. Technologies used are Next, React, Tailwind css and node`,
       image: project2img,
-      link: "https://event-lut5ddotl-ryanmwakio.vercel.app/",
-      github: "https://github.com/ryanmwakio/event-app-ui",
-      design: "",
-      platform: "web app",
-      bgClass: "bg-primarygreen",
-      textClass: "text-primarygreen",
-      technologies: ["next", "react", "tailwindcss", "node"],
+      link: 'https://event-lut5ddotl-ryanmwakio.vercel.app/',
+      github: 'https://github.com/ryanmwakio/event-app-ui',
+      design: '',
+      platform: 'web app',
+      bgClass: 'bg-primarygreen',
+      textClass: 'text-primarygreen',
+      technologies: ['next', 'react', 'tailwindcss', 'node'],
     },
     {
       id: 4,
-      title: "task rest api",
+      title: 'task rest api',
       description: `A task rest api that allows users to create, update, delete and view tasks. Technologies used are node, express, mongoDB, bcrypt and jwt. Complete with authentication and authorization. Note that some endpoints are not available for unauthenticated users.`,
       image: project4img,
-      link: "https://task-rest.herokuapp.com/",
-      github: "https://github.com/ryanmwakio/task-api",
-      design: "",
-      platform: "web app",
-      bgClass: "bg-blue-400",
-      textClass: "text-blue-400",
-      technologies: ["node", "express", "mongoDB", "bcrypt", "jwt"],
+      link: 'https://task-rest.herokuapp.com/',
+      github: 'https://github.com/ryanmwakio/task-api',
+      design: '',
+      platform: 'web app',
+      bgClass: 'bg-blue-400',
+      textClass: 'text-blue-400',
+      technologies: ['node', 'express', 'mongoDB', 'bcrypt', 'jwt'],
     },
-  ];
+  ]
   return (
     <>
       <div className="projects-section" id="projects">
@@ -136,19 +136,19 @@ function ProjectsSection() {
                             >
                               {technology}
                             </span>
-                          );
+                          )
                         })}
                       </div>
                     </div>
                   </div>
                 </div>
               </Fade>
-            );
+            )
           })}
         </div>
       </div>
     </>
-  );
+  )
 }
 
-export default ProjectsSection;
+export default ProjectsSection
