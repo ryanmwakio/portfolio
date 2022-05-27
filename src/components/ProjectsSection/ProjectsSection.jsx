@@ -35,6 +35,7 @@ function ProjectsSection() {
         "https://www.figma.com/file/oIIIcuS9LZrSXBDwm0WmU7/Music-Dashboard--Tunifi-(Community)?node-id=0%3A1",
       platform: "web app",
       bgClass: "bg-primarypurple",
+      dotBg: "dot-bg-purple",
       textClass: "text-primarypurple",
       technologies: ["react", "tailwindcss", "spotify api"],
     },
@@ -48,6 +49,7 @@ function ProjectsSection() {
       design: "",
       platform: "web app",
       bgClass: "bg-emerald-500",
+      dotBg: "dot-bg-emerald",
       textClass: "text-emerald-500",
       technologies: ["reactjs", "nextjs", "jsx", "tailwindcss", "css"],
     },
@@ -61,6 +63,7 @@ function ProjectsSection() {
       design: "",
       platform: "web app",
       bgClass: "bg-primaryorange",
+      dotBg: "dot-bg-orange",
       textClass: "text-primaryorange",
       technologies: ["node", "express", "mongoDB", "tailwindcss", "ejs"],
     },
@@ -74,6 +77,7 @@ function ProjectsSection() {
       design: "",
       platform: "web app",
       bgClass: "bg-primarygreen",
+      dotBg: "dot-bg-green",
       textClass: "text-primarygreen",
       technologies: ["next", "react", "tailwindcss", "node"],
     },
@@ -87,6 +91,7 @@ function ProjectsSection() {
       design: "",
       platform: "web app",
       bgClass: "bg-blue-400",
+      dotBg: "dot-bg-blue",
       textClass: "text-blue-400",
       technologies: ["node", "express", "mongoDB", "bcrypt", "jwt"],
     },
@@ -100,6 +105,7 @@ function ProjectsSection() {
       design: "",
       platform: "web app",
       bgClass: "bg-yellow-400",
+      dotBg: "dot-bg-yellow",
       textClass: "text-yellow-400",
       technologies: ["node", "express", "postgres", "postman", "geocoding"],
     },
@@ -119,11 +125,17 @@ function ProjectsSection() {
 
                   <div className="project-overlay"></div>
                   <h3 className="project-name">{project.title}</h3>
-                  {/* <div className="project-dots">
-                <span className="project-rounded-graphic dot-bg-purple"></span>
-                <span className="project-rounded-graphic dot-bg-purple"></span>
-                <span className="project-rounded-graphic dot-bg-purple"></span>
-              </div> */}
+                  <div className="project-dots">
+                    <span
+                      className={`project-rounded-graphic ${project.dotBg}`}
+                    ></span>
+                    <span
+                      className={`project-rounded-graphic ${project.dotBg}`}
+                    ></span>
+                    <span
+                      className={`project-rounded-graphic ${project.dotBg}`}
+                    ></span>
+                  </div>
                   <div className="project-description">
                     <div className="project-description-content">
                       <div className={`border-left  ${project.bgClass}`}></div>
