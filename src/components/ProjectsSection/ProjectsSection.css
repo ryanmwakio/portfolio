@@ -11,6 +11,7 @@
   left: 0;
   bottom: 0;
   z-index: 19;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .project {
@@ -22,7 +23,7 @@
 
 .project-overlay {
   @apply px-28;
-  background: #232427cb;
+  background: #23242779;
   width: 100%;
   position: absolute;
   top: 0;
@@ -120,8 +121,9 @@
   top: 10%;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   font-size: 0.8rem;
+  margin-left: 2rem;
 }
 
 .project-links span {
