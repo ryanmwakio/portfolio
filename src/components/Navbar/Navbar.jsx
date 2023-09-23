@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
-
 import figmaIcon from "../../assets/icons/figma.svg";
 import githubIcon from "../../assets/icons/github.svg";
 import MenuButton from "../MenuButton/MenuButton";

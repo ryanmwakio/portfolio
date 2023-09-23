@@ -73,7 +73,7 @@ function SkillSection() {
               </p>
               <p className='skill-list'>
                 PHP &nbsp;&nbsp;|&nbsp;&nbsp; Laravel
-                &nbsp;&nbsp;|&nbsp;&nbsp;React &nbsp;&nbsp;|&nbsp;&nbsp;
+                &nbsp;&nbsp;|&nbsp;&nbsp;Vue&nbsp;&nbsp;|&nbsp;&nbsp;React &nbsp;&nbsp;|&nbsp;&nbsp;
                 Javascript &nbsp;&nbsp;|&nbsp;&nbsp; Typescript
                 &nbsp;&nbsp;|&nbsp;&nbsp; Node &nbsp;&nbsp;|&nbsp;&nbsp;jQuery
                 &nbsp;&nbsp;|&nbsp;&nbsp;MySQL&nbsp;&nbsp;|&nbsp;&nbsp;Postgres&nbsp;&nbsp;|&nbsp;&nbsp;Mongodb
