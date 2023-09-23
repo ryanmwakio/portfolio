@@ -68,6 +68,7 @@ function App() {
             color={"#BD0F71"}
             loading={isLoading}
             css={override}
+            style={{height:'100vh'}}
             size={50}
             backGround="#232427"
           />
