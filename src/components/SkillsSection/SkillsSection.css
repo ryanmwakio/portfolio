@@ -6,7 +6,7 @@
 }
 
 .skill-item {
-  @apply bg-primaryblack py-20 px-10 my-10 flex justify-center flex-col align-middle cursor-pointer;
+  @apply bg-primaryblack py-20 px-10 my-10 flex justify-center flex-col align-middle cursor-pointer rounded-md;
   z-index: 10;
   position: relative;
   transition: all 0.3s;

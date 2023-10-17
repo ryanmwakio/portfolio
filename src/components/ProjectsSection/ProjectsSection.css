@@ -90,6 +90,10 @@
   background: linear-gradient(to bottom, #facc15, transparent);
 }
 
+.text-primaryyellow {
+  color: #facc15;
+}
+
 .project-description {
   position: absolute;
   right: 0%;
@@ -98,6 +102,7 @@
   width: 35%;
   overflow: hidden;
   box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.6);
+  @apply rounded-l-sm;
 }
 
 .project-description-content {

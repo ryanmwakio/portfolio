@@ -106,15 +106,7 @@ function HeroSection() {
         <div className="title-2">
           <h1>
             <Typist
-              sentences={[
-                "developer",
-                "designer",
-                "artisan",
-                "virtuoso",
-                "ninja",
-                "whizz",
-                "ace",
-              ]}
+              sentences={["developer", "artisan", "whizz"]}
               loop={true}
               typingSpeed={100}
               pauseTime={1500}
