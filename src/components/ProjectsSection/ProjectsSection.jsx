@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./ProjectsSection.css";
-import project1img from "../../assets/images/project-1.jpg";
+import project1img from "../../assets/images/project-1.png";
 import project2img from "../../assets/images/project-2.jpg";
-import project3img from "../../assets/images/project-3.jpg";
+import project3img from "../../assets/images/project-3.png";
 import project4img from "../../assets/images/project-4.jpg";
 import project5img from "../../assets/images/project-5.png";
 import project6img from "../../assets/images/project-6.jpg";

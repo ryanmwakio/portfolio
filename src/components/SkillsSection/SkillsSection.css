@@ -39,6 +39,7 @@
   background: -webkit-linear-gradient(to right, #4f4d4d, #8a8888);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  line-height: 1;
 }
 
 .text-gradient {
