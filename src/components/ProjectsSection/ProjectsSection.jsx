@@ -8,6 +8,7 @@ import project5img from "../../assets/images/project-5.png";
 import project6img from "../../assets/images/project-6.jpg";
 import project7img from "../../assets/images/project-7.png";
 import project8img from "../../assets/images/project-8.png";
+import project9img from "../../assets/images/project-9.png";
 import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 
@@ -29,7 +30,7 @@ function ProjectsSection() {
     {
       id: 0,
       title: "Vietnam B2B",
-      description: `A revamp of (vietnamfactoryb2b.com). A Vietnamese B2B platform for selling and buying of products and Services. Core technologies are Laravel, Vue, Nuxt with full token authentication, content management, Internationalization (i18n) and api.`,
+      description: `A revamp of B2B platform. A Vietnamese B2B platform for selling and buying of products and Services. With full token authentication flow, OTP, 2FA implemented, content management, Internationalization (i18n) and Rest api. Api (Rate limited/throttling, Caching, Emails, Background jobs, Load Balancing etc)`,
       image: project8img,
       link: "https://dev.vietnamfactoryb2b.com/",
       github: "https://dev.vietnamfactoryb2b.com/",
@@ -83,6 +84,21 @@ function ProjectsSection() {
       bgClass: "bg-primarypurple",
       dotBg: "dot-bg-purple",
       textClass: "text-primarypurple",
+      technologies: ["react", "tailwindcss", "spotify api"],
+    },
+    {
+      id: 5,
+      title: "Travel Site UI Landing",
+      description: `Landing page for a travel agency. Implementation based on a design with several views. Implemented the Landing and looking at adding the views and develop a backend system and logic for the same.`,
+      image: project9img,
+      link: "https://world-golobe.netlify.app/",
+      github: "https://github.com/ryanmwakio/tunifi",
+      design:
+        "https://www.figma.com/file/oIIIcuS9LZrSXBDwm0WmU7/Music-Dashboard--Tunifi-(Community)?node-id=0%3A1",
+      platform: "web app",
+      bgClass: "bg-primarygreen",
+      dotBg: "dot-bg-green",
+      textClass: "text-primarygreen",
       technologies: ["react", "tailwindcss", "spotify api"],
     },
   ];

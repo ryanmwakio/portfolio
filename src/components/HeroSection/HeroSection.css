@@ -53,6 +53,11 @@
   font-size: 3rem;
   font-weight: 900;
   z-index: 32;
+  text-shadow: -3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.typeit-element .ti-cursor {
+  display: none;
 }
 
 .hero-cta {

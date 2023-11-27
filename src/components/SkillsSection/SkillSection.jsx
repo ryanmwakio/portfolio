@@ -43,8 +43,7 @@ function SkillSection() {
                 I use include,
               </p>
               <p className="skill-list">
-                Figma &nbsp;&nbsp;|&nbsp;&nbsp; Adobe XD
-                &nbsp;&nbsp;|&nbsp;&nbsp; Adobe Photoshop
+                Figma &nbsp;&nbsp;|&nbsp;&nbsp; Adobe Photoshop
                 &nbsp;&nbsp;|&nbsp;&nbsp; Tailwind &nbsp;&nbsp;|&nbsp;&nbsp;
                 Bootstrap &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp; Css
               </p>
@@ -74,10 +73,11 @@ function SkillSection() {
               <p className="skill-list">
                 PHP &nbsp;&nbsp;|&nbsp;&nbsp; Laravel
                 &nbsp;&nbsp;|&nbsp;&nbsp;Vue&nbsp;&nbsp;|&nbsp;&nbsp;React
-                &nbsp;&nbsp;|&nbsp;&nbsp; Javascript &nbsp;&nbsp;|&nbsp;&nbsp;
+                &nbsp;&nbsp;|&nbsp;&nbsp; Javascript
+                &nbsp;&nbsp;|&nbsp;&nbsp;Python&nbsp;&nbsp;|&nbsp;&nbsp;
                 Typescript &nbsp;&nbsp;|&nbsp;&nbsp; Node
                 &nbsp;&nbsp;|&nbsp;&nbsp;jQuery
-                &nbsp;&nbsp;|&nbsp;&nbsp;MySQL&nbsp;&nbsp;|&nbsp;&nbsp;Postgres&nbsp;&nbsp;|&nbsp;&nbsp;Mongodb
+                &nbsp;&nbsp;|&nbsp;&nbsp;MySQL&nbsp;&nbsp;|&nbsp;&nbsp;Postgres&nbsp;&nbsp;|&nbsp;&nbsp;Mongodb&nbsp;&nbsp;|&nbsp;&nbsp;Docker&nbsp;&nbsp;|&nbsp;&nbsp;Redis
               </p>
 
               <h1 className={`skill-title ${active2 ? "text-gradient" : ""}`}>
@@ -104,6 +104,7 @@ function SkillSection() {
               <p className="skill-list">
                 Agile &nbsp;&nbsp;|&nbsp;&nbsp; Scrum &nbsp;&nbsp;|&nbsp;&nbsp;
                 Kanban &nbsp;&nbsp;|&nbsp;&nbsp; git & github
+                &nbsp;&nbsp;|&nbsp;&nbsp; Github actions CI & CD
               </p>
 
               <h1 className={`skill-title ${active3 ? "text-gradient" : ""}`}>

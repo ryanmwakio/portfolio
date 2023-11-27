@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import "./HeroSection.css";
 import Typist from "react-text-typist";
+import TypeIt from "typeit-react";
 
-import phoneImg1 from "../../assets/images/phone-img-1.jpg";
-import phoneImg2 from "../../assets/images/phone-img-2.jpg";
+//import phoneImg1 from "../../assets/images/phone-img-1.jpg";
+import phoneImg1 from "../../assets/images/hero-img-1.jpg";
+import phoneImg2 from "../../assets/images/hero-img-2.jpg";
 import { HashLink } from "react-router-hash-link";
 
 function HeroSection() {
@@ -28,7 +30,6 @@ function HeroSection() {
           <div className="line-vertical-right"></div>
           <div className="node-top-right"></div>
         </div>
-
         <div className="name">
           <h6>Ryan Mwakio</h6>
         </div>
@@ -68,7 +69,6 @@ function HeroSection() {
             </div>
           </div>
         </div>
-
         <div
           className="mobile-graphic-2"
           style={{ transform: `translateY(-${pageYOffset * 0.08}px)` }}
@@ -102,8 +102,7 @@ function HeroSection() {
             </div>
           </div>
         </div>
-
-        <div className="title-2">
+        {/* <div className="title-2">
           <h1>
             <Typist
               sentences={["developer", "artisan", "whizz"]}
@@ -113,6 +112,20 @@ function HeroSection() {
               deletingSpeed={80}
               startDelay={30}
               cursorSmooth={true}
+            />
+          </h1>
+        </div> */}
+
+        <div className="title-2">
+          <h1>
+            <TypeIt
+              options={{
+                loop: true,
+                strings: ["developer", "artisan", "whizz"],
+                speed: 100,
+                waitUntilVisible: true,
+                breakLines: false,
+              }}
             />
           </h1>
         </div>
