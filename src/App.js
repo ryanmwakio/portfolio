@@ -63,56 +63,45 @@ function App() {
   return (
     <>
       <div className="container">
-        {isLoading ? (
-          <HashLoader
-            color={"#BD0F71"}
-            loading={isLoading}
-            css={override}
-            style={{height:'100vh'}}
-            size={50}
-            backGround="#232427"
-          />
-        ) : (
-          <div>
-            <Helmet>
-              <meta charSet="utf-8" />
-              <link rel="shortcut icon" href={logo} type="image/x-icon" />
-              <title>Ryan M | Software Developer</title>
-              <link rel="canonical" href="http://mysite.com/example" />
-            </Helmet>
-            <ProgressBar bgcolor="#BD0F71" />
+        <div>
+          <Helmet>
+            <meta charSet="utf-8" />
+            <link rel="shortcut icon" href={logo} type="image/x-icon" />
+            <title>Ryan M | Software Developer</title>
+            <link rel="canonical" href="http://mysite.com/example" />
+          </Helmet>
+          <ProgressBar bgcolor="#BD0F71" />
 
-            <Fade bottom>
-              <div className={`${pageYOffset > 578 ? "to-top" : "hide"}`}>
-                <Fade top>
-                  <HashLink to="/#hero">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </HashLink>
-                </Fade>
-              </div>
-            </Fade>
+          <Fade bottom>
+            <div className={`${pageYOffset > 578 ? "to-top" : "hide"}`}>
+              <Fade top>
+                <HashLink to="/#hero">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </HashLink>
+              </Fade>
+            </div>
+          </Fade>
 
-            <Navbar />
+          <Navbar />
 
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="*" element={<Error />} />
-            </Routes>
-            <div className="cursor"></div>
-          </div>
-        )}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+          <div className="cursor"></div>
+        </div>
       </div>
     </>
   );

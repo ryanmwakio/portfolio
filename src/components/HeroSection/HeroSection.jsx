@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./HeroSection.css";
-import Typist from "react-text-typist";
 import TypeIt from "typeit-react";
 
 //import phoneImg1 from "../../assets/images/phone-img-1.jpg";
@@ -62,9 +61,10 @@ function HeroSection() {
                   </div>
                 </div>
 
-                <div className="phone-content">
-                  <img src={phoneImg2} alt="" />
-                </div>
+                <div
+                  className="phone-content"
+                  style={{ background: `url( ${phoneImg2})` }}
+                ></div>
               </div>
             </div>
           </div>
@@ -95,9 +95,10 @@ function HeroSection() {
                   </div>
                 </div>
 
-                <div className="phone-content object-cover">
-                  <img src={phoneImg1} alt="" />
-                </div>
+                <div
+                  className="phone-content"
+                  style={{ background: `url( ${phoneImg1})` }}
+                ></div>
               </div>
             </div>
           </div>
