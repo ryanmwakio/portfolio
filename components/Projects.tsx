@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import ProjectGallery from './ProjectGallery';
-
+ 
 const projects = [
   {
     title: 'Ecommerce B2B Platform',
