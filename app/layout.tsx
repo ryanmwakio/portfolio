@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ryan Mwakio - Full Stack Developer",
-  description: "Portfolio of Ryan Mwakio - Expert in Laravel, Vue, Nuxt, React, Next.js, Node.js, Nest.js, GraphQL, Docker, Kubernetes, GCP, and more",
+  description: "Portfolio of Ryan Mwakio - Expert in C#, .Net, Laravel, Vue, Nuxt, React, Next.js, Node.js, Nest.js, GraphQL, Docker, Kubernetes, GCP, and more",
 };
 
 export default function RootLayout({
