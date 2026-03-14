@@ -22,13 +22,13 @@ const skillCategories = [
   {
     title: 'Backend',
     icon: Database,
-    skills: [ 'Node.js', 'Nest.js', 'Python','Laravel', 'PHP',  'API Development'],
+    skills: [ 'Node.js', 'Express js','Nest.js', 'Python','Laravel', 'PHP',  'API Development'],
     color: 'text-purple-400'
   },
   {
     title: 'Data & APIs',
     icon: Network,
-    skills: ['GraphQL', 'REST APIs', 'System Design'],
+    skills: ['MySQL', 'MongoDB', 'PostgreSQL', 'GraphQL', 'REST APIs', 'System Design'],
     color: 'text-green-400'
   },
   {

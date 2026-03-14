@@ -7,7 +7,7 @@ import Contact from '@/components/Contact';
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen overflow-x-hidden hud-bg" style={{ background: 'var(--sci-fi-bg)' }}>
+    <main className="relative min-h-screen overflow-x-hidden hud-bg">
       <ThreeBackground />
       <Navigation />
       <div id="home">

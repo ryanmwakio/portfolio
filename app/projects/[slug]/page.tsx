@@ -31,7 +31,7 @@ export default async function ProjectPage({ params }: PageProps) {
 
   return (
     <CanvasTransition>
-      <main className="min-h-screen overflow-x-hidden hud-bg" style={{ background: 'var(--sci-fi-bg)' }}>
+      <main className="min-h-screen overflow-x-hidden hud-bg">
         <Navigation />
         <article className="relative pt-20 pb-16 sm:pt-24 sm:pb-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
