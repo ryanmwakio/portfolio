@@ -19,7 +19,8 @@ export default function CanvasTransition({ children }: { children: React.ReactNo
       {/* Canvas overlay: two panels that slide apart */}
       <div className="fixed inset-0 z-[100] pointer-events-none flex">
         <motion.div
-          className="absolute inset-y-0 left-0 w-1/2 bg-black"
+          className="absolute inset-y-0 left-0 w-1/2"
+          style={{ background: 'var(--sci-fi-bg)' }}
           initial={{ x: 0 }}
           animate={{ x: isOpen ? '-100%' : 0 }}
           transition={{
@@ -28,7 +29,8 @@ export default function CanvasTransition({ children }: { children: React.ReactNo
           }}
         />
         <motion.div
-          className="absolute inset-y-0 right-0 w-1/2 bg-black"
+          className="absolute inset-y-0 right-0 w-1/2"
+          style={{ background: 'var(--sci-fi-bg)' }}
           initial={{ x: 0 }}
           animate={{ x: isOpen ? '100%' : 0 }}
           transition={{
@@ -38,7 +40,8 @@ export default function CanvasTransition({ children }: { children: React.ReactNo
         />
         {/* Center seam line that expands */}
         <motion.div
-          className="absolute inset-y-0 left-1/2 w-px bg-white/20 -translate-x-px"
+          className="absolute inset-y-0 left-1/2 w-px -translate-x-px"
+          style={{ backgroundColor: 'var(--sci-fi-border-bright)' }}
           initial={{ scaleY: 1, opacity: 0.8 }}
           animate={{
             scaleY: isOpen ? 0 : 1,

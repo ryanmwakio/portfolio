@@ -76,6 +76,16 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  /* Sci-fi futuristic palette - blue-black base, strong contrast */
+  --sci-fi-bg: oklch(0.18 0.025 260);
+  --sci-fi-bg-elevated: oklch(0.24 0.03 260);
+  --sci-fi-surface: oklch(0.28 0.04 260);
+  --sci-fi-text: oklch(0.98 0 0);
+  --sci-fi-text-muted: oklch(0.82 0.02 260);
+  --sci-fi-accent: oklch(0.78 0.16 195);
+  --sci-fi-accent-dim: oklch(0.58 0.12 195);
+  --sci-fi-border: oklch(0.42 0.05 260);
+  --sci-fi-border-bright: oklch(0.55 0.1 195);
 }
 
 .dark {
@@ -123,7 +133,8 @@
   }
   
   body {
-    @apply bg-black text-white;
+    background: var(--sci-fi-bg);
+    color: var(--sci-fi-text);
     overflow-x: hidden;
   }
 }
@@ -138,13 +149,13 @@
     inset: 0;
     pointer-events: none;
     z-index: -5;
-    opacity: 0.35;
+    opacity: 0.5;
     background-image:
-      linear-gradient(to right, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+      linear-gradient(to right, rgba(34, 211, 238, 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(34, 211, 238, 0.06) 1px, transparent 1px);
     background-size: 64px 64px;
     background-position: center;
-    mask-image: radial-gradient(circle at 50% 20%, black 0%, black 35%, transparent 75%);
+    mask-image: radial-gradient(circle at 50% 20%, black 0%, black 40%, transparent 70%);
   }
   .hud-bg::after {
     content: "";
@@ -152,12 +163,12 @@
     inset: 0;
     pointer-events: none;
     z-index: -4;
-    opacity: 0.18;
+    opacity: 0.25;
     background-image:
       repeating-linear-gradient(
         to bottom,
-        rgba(255, 255, 255, 0.06) 0px,
-        rgba(255, 255, 255, 0.06) 1px,
+        rgba(34, 211, 238, 0.04) 0px,
+        rgba(34, 211, 238, 0.04) 1px,
         transparent 2px,
         transparent 6px
       );
@@ -181,11 +192,11 @@
   .hud-panel {
     position: relative;
     border-radius: 1.25rem;
-    background: rgba(255, 255, 255, 0.045);
-    border: 1px solid rgba(255, 255, 255, 0.10);
+    background: var(--sci-fi-surface);
+    border: 1px solid var(--sci-fi-border);
     box-shadow:
-      0 10px 38px rgba(0, 0, 0, 0.45),
-      inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      0 10px 38px rgba(0, 0, 0, 0.35),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08);
   }
 
   .hud-corners::before,
@@ -246,17 +257,27 @@
   .glass-card {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    background: rgba(20, 35, 55, 0.5);
+    border: 1px solid rgba(34, 211, 238, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.06);
   }
   
   .glass-card:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    background: rgba(30, 50, 75, 0.55);
+    border-color: rgba(34, 211, 238, 0.3);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), 0 0 24px rgba(34, 211, 238, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.08);
     transform: translateY(-2px);
     transition: all 0.3s ease;
+  }
+  
+  .sci-fi-text {
+    color: var(--sci-fi-text);
+  }
+  .sci-fi-text-muted {
+    color: var(--sci-fi-text-muted);
+  }
+  .sci-fi-accent {
+    color: var(--sci-fi-accent);
   }
   
   @media (prefers-reduced-motion: reduce) {

@@ -19,7 +19,7 @@ export default function AnimatedLogo() {
     >
       {/* Glass morphism container */}
       <motion.div
-        className="absolute inset-0 glass-card rounded-2xl backdrop-blur-xl border border-white/20"
+        className="absolute inset-0 glass-card rounded-2xl backdrop-blur-xl border border-[var(--sci-fi-border-bright)]"
         animate={{
           rotate: isHovered ? [0, 5, -5, 0] : 0,
         }}
@@ -31,7 +31,7 @@ export default function AnimatedLogo() {
       
       {/* Animated corner accents */}
       <motion.div
-        className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-white/40 rounded-tl-2xl"
+        className="absolute top-0 left-0 w-3 h-3 border-t-2 border-l-2 border-[var(--sci-fi-accent)] rounded-tl-2xl opacity-70"
         animate={{
           opacity: isHovered ? [0.4, 1, 0.4] : 0.4,
         }}
@@ -42,7 +42,7 @@ export default function AnimatedLogo() {
         }}
       />
       <motion.div
-        className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-white/40 rounded-br-2xl"
+        className="absolute bottom-0 right-0 w-3 h-3 border-b-2 border-r-2 border-[var(--sci-fi-accent)] rounded-br-2xl opacity-70"
         animate={{
           opacity: isHovered ? [0.4, 1, 0.4] : 0.4,
         }}
@@ -57,7 +57,7 @@ export default function AnimatedLogo() {
       {/* Letters with premium styling */}
       <div className="relative z-10 flex items-center justify-center gap-0.5">
         <motion.span
-          className="text-white font-bold text-xl sm:text-2xl tracking-tight"
+          className="text-[var(--sci-fi-text)] font-bold text-xl sm:text-2xl tracking-tight"
           animate={{
             y: isHovered ? [0, -3, 0] : 0,
             rotate: isHovered ? [0, -5, 0] : 0,
@@ -70,7 +70,7 @@ export default function AnimatedLogo() {
           R
         </motion.span>
         <motion.span
-          className="text-white font-bold text-xl sm:text-2xl tracking-tight"
+          className="text-[var(--sci-fi-text)] font-bold text-xl sm:text-2xl tracking-tight"
           animate={{
             y: isHovered ? [0, 3, 0] : 0,
             rotate: isHovered ? [0, 5, 0] : 0,

@@ -23,7 +23,7 @@ export default function ProjectGallery({ projects }: ProjectGalleryProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: '-40px' }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="group relative rounded-2xl overflow-hidden glass-card border border-white/10 hover:border-white/20 transition-all duration-300 cursor-pointer"
+            className="group relative rounded-2xl overflow-hidden glass-card border border-[var(--sci-fi-border)] hover:border-[var(--sci-fi-border-bright)] transition-all duration-300 cursor-pointer"
             role="link"
             tabIndex={0}
             aria-label={`Open project ${project.title}`}
@@ -37,7 +37,7 @@ export default function ProjectGallery({ projects }: ProjectGalleryProps) {
           >
             {/* Click hint */}
             <div className="absolute top-4 right-4 z-30 pointer-events-none">
-              <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-black/30 backdrop-blur-sm border border-white/15 text-white/80 text-xs font-medium opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
+              <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[var(--sci-fi-bg-elevated)] backdrop-blur-sm border border-[var(--sci-fi-border-bright)] text-[var(--sci-fi-text-muted)] text-xs font-medium opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
                 <span>Open case study</span>
                 <ArrowUpRight className="w-3.5 h-3.5" />
               </div>
@@ -70,19 +70,19 @@ export default function ProjectGallery({ projects }: ProjectGalleryProps) {
                 <div className="absolute inset-0 bg-white/5" />
               )}
               {/* Gradient overlay */}
-              <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent opacity-80 group-hover:opacity-95 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-linear-to-t from-[var(--sci-fi-bg)]/95 via-[var(--sci-fi-bg)]/50 to-transparent opacity-90 group-hover:opacity-95 transition-opacity duration-300" />
               
               {/* Category badge - top left */}
-              <span className="absolute top-4 left-4 px-3 py-1 text-xs font-medium rounded-full bg-white/10 backdrop-blur-sm border border-white/20 text-white/90">
+              <span className="absolute top-4 left-4 px-3 py-1 text-xs font-medium rounded-full bg-[var(--sci-fi-surface)] backdrop-blur-sm border border-[var(--sci-fi-border-bright)] text-[var(--sci-fi-text-muted)]">
                 {project.category}
               </span>
 
               {/* Content overlay - bottom */}
               <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6 lg:p-8">
-                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-2 leading-tight">
+                <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-[var(--sci-fi-text)] mb-2 leading-tight">
                   {project.title}
                 </h3>
-                <p className="text-sm sm:text-base text-white/80 line-clamp-2 mb-4 max-w-xl">
+                <p className="text-sm sm:text-base text-[var(--sci-fi-text-muted)] line-clamp-2 mb-4 max-w-xl">
                   {project.description}
                 </p>
                 
@@ -91,7 +91,7 @@ export default function ProjectGallery({ projects }: ProjectGalleryProps) {
                   {project.tech.slice(0, 4).map((tech) => (
                     <span
                       key={tech}
-                      className="px-2.5 py-1 text-xs rounded-lg bg-white/10 border border-white/20 text-white/90 backdrop-blur-sm"
+                      className="px-2.5 py-1 text-xs rounded-lg bg-[var(--sci-fi-surface)] border border-[var(--sci-fi-border-bright)] text-[var(--sci-fi-text-muted)] backdrop-blur-sm"
                     >
                       {tech}
                     </span>
@@ -106,7 +106,7 @@ export default function ProjectGallery({ projects }: ProjectGalleryProps) {
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
-                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 border border-white/20 text-white text-sm font-medium hover:bg-white/20 transition-all"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[var(--sci-fi-surface)] border border-[var(--sci-fi-border-bright)] text-[var(--sci-fi-text)] text-sm font-medium hover:border-[var(--sci-fi-accent)] transition-all"
                     >
                       <Github className="w-4 h-4" />
                       Code
@@ -118,7 +118,7 @@ export default function ProjectGallery({ projects }: ProjectGalleryProps) {
                       target="_blank"
                       rel="noopener noreferrer"
                       onClick={(e) => e.stopPropagation()}
-                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 border border-white/20 text-white text-sm font-medium hover:bg-white/20 transition-all"
+                      className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[var(--sci-fi-surface)] border border-[var(--sci-fi-border-bright)] text-[var(--sci-fi-text)] text-sm font-medium hover:border-[var(--sci-fi-accent)] transition-all"
                     >
                       <ExternalLink className="w-4 h-4" />
                       Live Demo

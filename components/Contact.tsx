@@ -28,10 +28,10 @@ export default function Contact() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[var(--sci-fi-text)] mb-4 tracking-tight">
             Let's Connect
           </h2>
-          <p className="text-lg text-white/60 max-w-2xl mx-auto">
+          <p className="text-lg text-[var(--sci-fi-text-muted)] max-w-2xl mx-auto">
             Open to collaborations, opportunities, and interesting projects
           </p>
         </motion.div>
@@ -41,7 +41,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="glass-card p-6 sm:p-8 lg:p-12 rounded-xl sm:rounded-2xl backdrop-blur-xl bg-white/5 border border-white/10"
+          className="glass-card p-6 sm:p-8 lg:p-12 rounded-xl sm:rounded-2xl border border-[var(--sci-fi-border)]"
         >
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-8">
             {socialLinks.map((social, index) => {
@@ -57,10 +57,10 @@ export default function Contact() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.3, delay: index * 0.1 }}
                   whileHover={{ scale: 1.1 }}
-                  className="flex flex-col items-center gap-2 sm:gap-3 p-4 sm:p-6 rounded-xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-white/20 transition-all group"
+                  className="flex flex-col items-center gap-2 sm:gap-3 p-4 sm:p-6 rounded-xl bg-[var(--sci-fi-surface)] border border-[var(--sci-fi-border)] hover:border-[var(--sci-fi-border-bright)] hover:bg-[var(--sci-fi-bg-elevated)] transition-all group"
                 >
-                  <Icon className="w-6 h-6 text-white/60 group-hover:text-white transition-colors" />
-                  <span className="text-sm text-white/70 group-hover:text-white transition-colors">
+                  <Icon className="w-6 h-6 text-[var(--sci-fi-text-muted)] group-hover:text-[var(--sci-fi-accent)] transition-colors" />
+                  <span className="text-sm text-[var(--sci-fi-text-muted)] group-hover:text-[var(--sci-fi-text)] transition-colors">
                     {social.label}
                   </span>
                 </motion.a>
@@ -68,10 +68,10 @@ export default function Contact() {
             })}
           </div>
 
-          <div className="pt-8 border-t border-white/10">
+          <div className="pt-8 border-t border-[var(--sci-fi-border)]">
             <motion.a
               href="mailto:ryanmwakio6@gmail.com"
-              className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-white/10 border border-white/20 text-white hover:bg-white/20 transition-all group"
+              className="inline-flex items-center gap-3 px-8 py-4 rounded-xl bg-[var(--sci-fi-surface)] border border-[var(--sci-fi-border-bright)] text-[var(--sci-fi-text)] hover:border-[var(--sci-fi-accent)] transition-all group"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -86,7 +86,7 @@ export default function Contact() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-center mt-12 text-white/40 text-sm"
+          className="text-center mt-12 text-[var(--sci-fi-text-muted)]/70 text-sm"
         >
           <p>© {new Date().getFullYear()} Ryan Mwakio. All rights reserved.</p>
         </motion.div>

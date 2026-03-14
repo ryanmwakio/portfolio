@@ -15,10 +15,10 @@ export default function Projects() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight">
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-[var(--sci-fi-text)] mb-4 tracking-tight">
             Featured Projects
           </h2>
-          <p className="text-lg text-white/60 max-w-2xl mx-auto">
+          <p className="text-lg text-[var(--sci-fi-text-muted)] max-w-2xl mx-auto">
             Showcasing innovative solutions and technical excellence
           </p>
         </motion.div>

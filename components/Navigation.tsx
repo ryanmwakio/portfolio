@@ -31,7 +31,7 @@ export default function Navigation() {
       transition={{ duration: 0.6 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'backdrop-blur-xl bg-white/10'
+          ? 'backdrop-blur-xl bg-[var(--sci-fi-bg-elevated)] border-b border-[var(--sci-fi-border)]'
           : 'bg-transparent'
       }`}
     >
@@ -45,7 +45,7 @@ export default function Navigation() {
               <motion.a
                 key={item.label}
                 href={item.href}
-                className="text-white/80 hover:text-white transition-colors text-sm font-medium"
+                className="text-[var(--sci-fi-text-muted)] hover:text-[var(--sci-fi-accent)] transition-colors text-sm font-medium"
                 whileHover={{ y: -2 }}
               >
                 {item.label}
@@ -55,7 +55,7 @@ export default function Navigation() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white/80 hover:text-white transition-colors"
+            className="md:hidden text-[var(--sci-fi-text-muted)] hover:text-[var(--sci-fi-accent)] transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -70,14 +70,14 @@ export default function Navigation() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden glass-card backdrop-blur-xl bg-white/10 border-t border-white/10"
+            className="md:hidden glass-card backdrop-blur-xl border-t border-[var(--sci-fi-border)]"
           >
             <div className="px-4 py-4 space-y-4">
               {navItems.map((item) => (
                 <motion.a
                   key={item.label}
                   href={item.href}
-                  className="block text-white/80 hover:text-white transition-colors text-sm font-medium py-2"
+                  className="block text-[var(--sci-fi-text-muted)] hover:text-[var(--sci-fi-accent)] transition-colors text-sm font-medium py-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                   whileHover={{ x: 5 }}
                 >

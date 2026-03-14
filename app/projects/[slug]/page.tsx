@@ -31,14 +31,14 @@ export default async function ProjectPage({ params }: PageProps) {
 
   return (
     <CanvasTransition>
-      <main className="min-h-screen bg-black overflow-x-hidden">
+      <main className="min-h-screen overflow-x-hidden hud-bg" style={{ background: 'var(--sci-fi-bg)' }}>
         <Navigation />
         <article className="relative pt-20 pb-16 sm:pt-24 sm:pb-24">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             {/* Back link */}
             <Link
               href="/#projects"
-              className="inline-flex items-center gap-2 text-white/70 hover:text-white text-sm font-medium mb-8 transition-colors"
+              className="inline-flex items-center gap-2 text-[var(--sci-fi-text-muted)] hover:text-[var(--sci-fi-accent)] text-sm font-medium mb-8 transition-colors"
             >
               <ArrowLeft className="w-4 h-4" />
               Back to projects
@@ -46,13 +46,13 @@ export default async function ProjectPage({ params }: PageProps) {
 
             {/* Hero */}
             <header className="mb-12 sm:mb-16">
-              <span className="inline-block px-4 py-1.5 text-xs font-medium rounded-full bg-white/10 border border-white/20 text-white/80 mb-4">
+              <span className="inline-block px-4 py-1.5 text-xs font-medium rounded-full bg-[var(--sci-fi-surface)] border border-[var(--sci-fi-border-bright)] text-[var(--sci-fi-text-muted)] mb-4">
                 {project.category}
               </span>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-4">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[var(--sci-fi-text)] tracking-tight mb-4">
                 {project.title}
               </h1>
-              <p className="text-lg sm:text-xl text-white/80 max-w-2xl">
+              <p className="text-lg sm:text-xl text-[var(--sci-fi-text-muted)] max-w-2xl">
                 {project.description}
               </p>
             </header>
@@ -62,36 +62,36 @@ export default async function ProjectPage({ params }: PageProps) {
 
           {/* Long description */}
           <section className="mb-12 sm:mb-16">
-            <h2 className="text-sm font-medium text-white/50 uppercase tracking-wider mb-4">
+            <h2 className="text-sm font-medium text-[var(--sci-fi-text-muted)] uppercase tracking-wider mb-4">
               About
             </h2>
-            <p className="text-white/80 leading-relaxed text-lg">
+            <p className="text-[var(--sci-fi-text-muted)] leading-relaxed text-lg">
               {project.longDescription}
             </p>
           </section>
 
           {/* Problem */}
           <section className="mb-12 sm:mb-16">
-            <h2 className="text-sm font-medium text-white/50 uppercase tracking-wider mb-4">
+            <h2 className="text-sm font-medium text-[var(--sci-fi-text-muted)] uppercase tracking-wider mb-4">
               Problem it solved
             </h2>
-            <p className="text-white/80 leading-relaxed text-lg">
+            <p className="text-[var(--sci-fi-text-muted)] leading-relaxed text-lg">
               {project.problem}
             </p>
           </section>
 
           {/* Inspirations */}
           <section className="mb-12 sm:mb-16">
-            <h2 className="text-sm font-medium text-white/50 uppercase tracking-wider mb-4">
+            <h2 className="text-sm font-medium text-[var(--sci-fi-text-muted)] uppercase tracking-wider mb-4">
               Inspirations
             </h2>
             <ul className="space-y-3">
               {project.inspirations.map((item, i) => (
                 <li
                   key={i}
-                  className="flex items-start gap-3 text-white/80 leading-relaxed"
+                  className="flex items-start gap-3 text-[var(--sci-fi-text-muted)] leading-relaxed"
                 >
-                  <span className="text-white/50 mt-1.5">•</span>
+                  <span className="text-[var(--sci-fi-accent)] mt-1.5">•</span>
                   <span>{item}</span>
                 </li>
               ))}
@@ -100,14 +100,14 @@ export default async function ProjectPage({ params }: PageProps) {
 
           {/* Tech stack & why */}
           <section className="mb-12 sm:mb-16">
-            <h2 className="text-sm font-medium text-white/50 uppercase tracking-wider mb-4">
+            <h2 className="text-sm font-medium text-[var(--sci-fi-text-muted)] uppercase tracking-wider mb-4">
               Technology stack & rationale
             </h2>
             <div className="flex flex-wrap gap-2 mb-6">
               {project.tech.map((t) => (
                 <span
                   key={t}
-                  className="px-3 py-1.5 text-sm rounded-lg bg-white/10 border border-white/20 text-white/90"
+                  className="px-3 py-1.5 text-sm rounded-lg bg-[var(--sci-fi-surface)] border border-[var(--sci-fi-border-bright)] text-[var(--sci-fi-text-muted)]"
                 >
                   {t}
                 </span>
@@ -117,23 +117,23 @@ export default async function ProjectPage({ params }: PageProps) {
               {project.whyTechStack.map(({ name, reason }) => (
                 <li
                   key={name}
-                  className="pl-4 border-l-2 border-white/20"
+                  className="pl-4 border-l-2 border-[var(--sci-fi-border-bright)]"
                 >
-                  <span className="font-medium text-white">{name}</span>
-                  <p className="text-white/70 mt-1 leading-relaxed">{reason}</p>
+                  <span className="font-medium text-[var(--sci-fi-text)]">{name}</span>
+                  <p className="text-[var(--sci-fi-text-muted)] mt-1 leading-relaxed">{reason}</p>
                 </li>
               ))}
             </ul>
           </section>
 
           {/* Links */}
-          <section className="pt-8 border-t border-white/10 flex flex-wrap gap-4">
+          <section className="pt-8 border-t border-[var(--sci-fi-border)] flex flex-wrap gap-4">
             {project.demoUrl && (
               <a
                 href={project.demoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white/10 border border-white/20 text-white font-medium hover:bg-white/20 transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[var(--sci-fi-surface)] border border-[var(--sci-fi-border-bright)] text-[var(--sci-fi-text)] font-medium hover:border-[var(--sci-fi-accent)] transition-colors"
               >
                 <ExternalLink className="w-4 h-4" />
                 Live Demo
@@ -144,7 +144,7 @@ export default async function ProjectPage({ params }: PageProps) {
                 href={project.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-white/10 border border-white/20 text-white font-medium hover:bg-white/20 transition-colors"
+                className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-[var(--sci-fi-surface)] border border-[var(--sci-fi-border-bright)] text-[var(--sci-fi-text)] font-medium hover:border-[var(--sci-fi-accent)] transition-colors"
               >
                 <Github className="w-4 h-4" />
                 View Code
