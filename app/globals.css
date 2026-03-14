@@ -129,6 +129,120 @@
 }
 
 @layer utilities {
+  .hud-bg {
+    position: relative;
+  }
+  .hud-bg::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -5;
+    opacity: 0.35;
+    background-image:
+      linear-gradient(to right, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    background-size: 64px 64px;
+    background-position: center;
+    mask-image: radial-gradient(circle at 50% 20%, black 0%, black 35%, transparent 75%);
+  }
+  .hud-bg::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -4;
+    opacity: 0.18;
+    background-image:
+      repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.06) 0px,
+        rgba(255, 255, 255, 0.06) 1px,
+        transparent 2px,
+        transparent 6px
+      );
+    mix-blend-mode: overlay;
+  }
+
+  .hud-noise {
+    position: relative;
+  }
+  .hud-noise::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.06;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
+    background-size: 180px 180px;
+    mix-blend-mode: overlay;
+  }
+
+  .hud-panel {
+    position: relative;
+    border-radius: 1.25rem;
+    background: rgba(255, 255, 255, 0.045);
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    box-shadow:
+      0 10px 38px rgba(0, 0, 0, 0.45),
+      inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  }
+
+  .hud-corners::before,
+  .hud-corners::after {
+    content: "";
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    pointer-events: none;
+    opacity: 0.6;
+    transition: opacity 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+  }
+  .hud-corners::before {
+    top: 14px;
+    left: 14px;
+    border-top: 2px solid rgba(34, 211, 238, 0.35);
+    border-left: 2px solid rgba(34, 211, 238, 0.35);
+    border-top-left-radius: 10px;
+  }
+  .hud-corners::after {
+    bottom: 14px;
+    right: 14px;
+    border-bottom: 2px solid rgba(34, 211, 238, 0.35);
+    border-right: 2px solid rgba(34, 211, 238, 0.35);
+    border-bottom-right-radius: 10px;
+  }
+  .group:hover .hud-corners::before,
+  .group:hover .hud-corners::after {
+    opacity: 1;
+    border-color: rgba(34, 211, 238, 0.75);
+    box-shadow: 0 0 18px rgba(34, 211, 238, 0.22);
+  }
+
+  .hud-sheen {
+    position: relative;
+    overflow: hidden;
+  }
+  .hud-sheen::after {
+    content: "";
+    position: absolute;
+    inset: -40%;
+    background: linear-gradient(120deg, transparent 35%, rgba(34, 211, 238, 0.10) 50%, transparent 65%);
+    transform: translateX(-40%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 200ms ease;
+  }
+  .group:hover .hud-sheen::after {
+    opacity: 1;
+    animation: hud-sheen 900ms ease forwards;
+  }
+  @keyframes hud-sheen {
+    to {
+      transform: translateX(45%);
+    }
+  }
+
   .glass-card {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);

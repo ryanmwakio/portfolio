@@ -7,7 +7,7 @@ import Contact from '@/components/Contact';
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-black overflow-x-hidden">
+    <main className="relative min-h-screen bg-black overflow-x-hidden hud-bg">
       <ThreeBackground />
       <Navigation />
       <div id="home">

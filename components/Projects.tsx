@@ -2,45 +2,7 @@
 
 import { motion } from 'framer-motion';
 import ProjectGallery from './ProjectGallery';
- 
-const projects = [
-  {
-    title: 'Ecommerce B2B Platform',
-    description: 'Scalable B2B ecommerce platform built with Laravel, Vue, Nuxt, and Docker.',
-    tech: ['Laravel', 'Vue', 'Nuxt', 'Docker'],
-    category: 'Full Stack',
-    githubUrl: '',
-    demoUrl: 'https://vietnamfactoryb2b.com/',
-    image: '/images/project1.png'
-  },
-  {
-    title: 'Modern Web Application',
-    description: 'Modern web application built with Next.js, Nest.js, and GraphQL.',
-    tech: ['Next.js','Typescript', 'Nest.js', 'Flutter', 'GraphQL', 'Docker'],
-    category: 'Full Stack',
-    githubUrl: '',
-    image: '/images/project2.png'
-    // No demoUrl - Live Demo won't show
-  },
-  {
-    title: 'Ticketing System',
-    description: 'Ticketing system built with Laravel, Vue, and Javascript.',
-    tech: ['Laravel', 'Vue', 'Javascript', 'Payment Gateway'],
-    category: 'Full Stack',
-    githubUrl: '',
-    demoUrl: 'https://ticketsasa.com/',
-    image: '/images/project3.png'
-  },
-  {
-    title: 'Real estate API',
-    description: 'Real estate API built with Node.js, Express, MySQL, and REST APIs.',
-    tech: ['Node.js', 'Express', 'MySQL', 'REST APIs'],
-    category: 'Full Stack',
-    demoUrl: 'https://urbancribs.onrender.com/',
-    image: '/images/project4.png'
-    // No demoUrl - Live Demo won't show
-  }
-];
+import { projects } from '@/data/projects';
 
 export default function Projects() {
   return (
