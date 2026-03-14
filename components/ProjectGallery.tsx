@@ -35,11 +35,11 @@ export default function ProjectGallery({ projects }: ProjectGalleryProps) {
               }
             }}
           >
-            {/* Click hint */}
+            {/* Click hint - always visible so users know cards are clickable */}
             <div className="absolute top-4 right-4 z-30 pointer-events-none">
-              <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[var(--sci-fi-bg-elevated)] backdrop-blur-sm border border-[var(--sci-fi-border-bright)] text-[var(--sci-fi-text-muted)] text-xs font-medium opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-opacity duration-200">
-                <span>Open case study</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
+              <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[var(--sci-fi-bg-elevated)] backdrop-blur-sm border border-[var(--sci-fi-border-bright)] text-[var(--sci-fi-text-muted)] text-xs font-medium group-hover:text-[var(--sci-fi-accent)] group-hover:border-[var(--sci-fi-accent)] transition-colors duration-200">
+                <span>Click to view</span>
+                <ArrowUpRight className="w-3.5 h-3.5 shrink-0" />
               </div>
             </div>
 
@@ -85,6 +85,7 @@ export default function ProjectGallery({ projects }: ProjectGalleryProps) {
                 <p className="text-sm sm:text-base text-[var(--sci-fi-text-muted)] line-clamp-2 mb-4 max-w-xl">
                   {project.description}
                 </p>
+
                 
                 {/* Tech stack */}
                 <div className="flex flex-wrap gap-2 mb-4">

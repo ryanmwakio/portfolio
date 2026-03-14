@@ -19,7 +19,7 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="text-lg text-[var(--sci-fi-text-muted)] max-w-2xl mx-auto">
-            Showcasing innovative solutions and technical excellence
+            Showcasing innovative solutions and technical excellence. Click any project to view the full case study.
           </p>
         </motion.div>
 
