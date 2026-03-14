@@ -22,7 +22,7 @@ const skillCategories = [
   {
     title: 'Backend',
     icon: Database,
-    skills: ['C#', '.Net', 'Laravel', 'PHP', 'Node.js', 'Nest.js', 'API Development'],
+    skills: [ 'Node.js', 'Nest.js', 'Python','Laravel', 'PHP',  'API Development'],
     color: 'text-purple-400'
   },
   {
